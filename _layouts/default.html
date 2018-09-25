@@ -1,0 +1,124 @@
+{%- assign assets_path = "assets/" -%}
+{%- if site.assets_path -%}
+  {%- assign assets_path = site.assets_path -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+
+    <title>{{ site.title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ assets_path }}vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ assets_path }}vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Kotta+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Laila&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{{ assets_path }}css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+
+
+    {{ content }}
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <span class="copyright">{{ site.data.default.copyright }}</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    {% assign ws = '' %}
+    {%- if page.layout == 'home' -%}
+    <!-- Portfolio Modals -->
+    {%- for project in site.posts -%}
+    {% assign ws = '' %}
+
+    <!-- Modal {{ project.id | replace: '/projects/', '' }} -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal{{ project.id | replace: '/projects/', '' }}" tabindex="-1" role="dialog" aria-hidden="true"> -->
+     <div class="portfolio-modal modal fade" id="portfolioModal{{ project.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              {% if project.curriculum == true %}
+              <div class="col-lg-12 mx-auto">
+              {% else %}
+              <div class="col-lg-8 mx-auto">
+              {% endif %}
+
+                <div class="modal-body" style="text-align: left;">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase" style="text-align: center;">{{ project.title }}</h2>
+                  {% if project.curriculum == true %}
+                  <p class=" text-muted" style="text-align: center; margin-bottom: 0px;">{{ project.description }}</p>
+                  {% endif %}
+                  <p class=" text-muted" style="text-align: center; margin-bottom: 0px;">{{ project.people }}</p>                  
+                  <img class="img-fluid d-block mx-auto" src="{{ assets_path }}{{ project.image }}" alt="">
+                  {% assign ws = '' %}
+                  {{- project.content -}}
+                  {% assign ws = '' %}             
+                  <br>
+                  <div style="display: flex; align-items: center;">
+                    <button class="btn btn-primary" data-dismiss="modal" type="button" style="display: flex; align-items: center;">
+                      <i class="fa fa-close" style="padding-right: 0.3em;"></i>
+                      CLOSE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {%- endfor -%}
+
+    {%- endif -%}
+    {% assign ws = '' %}
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ assets_path }}vendor/jquery/jquery.min.js"></script>
+    <script src="{{ assets_path }}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{{ assets_path }}vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="{{ assets_path }}js/jqBootstrapValidation.js"></script>
+    <script src="{{ assets_path }}js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ assets_path }}js/agency.min.js"></script>
+
+  </body>
+
+</html>

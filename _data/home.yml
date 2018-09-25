@@ -1,0 +1,107 @@
+intro:
+  lead-in: ""
+  heading: DevOps ATC POLAND
+  btn: Zobacz Więcej
+
+wspolpraca:
+  heading: Współpraca z Devops ATC
+  subheading: Jakie korzysci z tego wynikają?
+  service:
+    - icon: fa fa-money
+      heading: OSZCZĘDNOŚĆ PIENIĘDZY
+      text: Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
+    - icon: fa fa-male
+      heading: WARTOŚĆ DLA MANAGEMENTU
+      text: Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
+    - icon: fa fa-briefcase
+      heading: WARTOŚĆ DLA BIZNESU
+      text: Krótszy czas od pomysłu do wdrożenia go na produkcję.
+
+
+portfolio:
+  heading: Nasze Propozycje
+  subheading: Pamiętaj - przedstawione propozycje są elastyczne, 
+    możemy je dopasować pod konkretne wymagania.
+
+plus:
+  heading: PLUSY 
+  subheading: Na co wpłyną nasze rozwiązania?
+  icon: fa fa-check
+  content:
+    - name:  ZESPÓŁ
+      text: " "
+      advantages:
+        - check: Łatwiejszy wgląd w wykonaną pracę 
+        - check: Szybki wgląd do logów budowy oraz deployu aplikacji
+        - check: Prostsza wspołpraca między developerami
+        
+    # - name: CZAS
+    #   text: "przykładowo:"
+    #   advantages:
+    #     - check: 4h / tydzień
+    #     - check: 16h / miesiąc
+    #     - check: 192h / rok 
+
+    - name: PIENIĄDZE
+      text: " "
+      advantages:
+        - check: Krótszy czas od wdrożenia na produkcję
+        - check: Prostsze eksperymentowanie dzięki łatwej możliwości wycofania zmian
+        - check: Większa niezawodność deploymentów
+
+
+repo:
+  heading: REPOZYTORIUM & ALM
+  subheading: Cenniki możliwych usług.
+  repoheading: REPOZYTORIUM
+  almheading: ALM  
+
+capacity:
+  heading: CAPACITY SERVICE
+  subheading: Wypożyczenie specjalistów DevOps - zasady dobrej współpracy.
+  rules:
+    - item: Ekspert DevOps wykonuje zadania z zakresu DevOps wskazane przez TLa zespołu projektowego zgodnie z ogólnymi zasadami współpracy projektów z ATC
+    - item: Współpracę warto rozpocząć od omówienia sytuacji projektowej i wspólnego wyznaczenia celów i planu. Spotkanie takie może się odbyć w szerszym gronie, angażując innych doświadczonych ekspertów devops.
+    - item: Zakładamy możliwość wymieniania się zadaniami w ramach członków zespołu DevOps, aby zapewnić odpowiednią jakość dostarczanego rozwiązania poprzez wykorzystanie wiedzy danej osoby do odpowiedniego zadania
+    - item: W razie potrzeby bezpośredniego kontaktu ekspert DevOps może pracować w lokalizacji zespołu projektowego do 50% czasu
+    - item: Rekomendowanym sposobem pracy jest Agile/Scrum, gdzie TL zespołu projektowego pełni rolę Product Ownera, a jeden lub więcej ekspertów DevOps i opcjonalnie programista z projektu składają się na zespół dostarczający rozwiązania DevOps
+
+
+people:
+  heading: Nasi specjaliści
+  subheading: 
+  text: Jestesmy zespolem specjalizujacym sie w automatyzacji procesow  # tekst o zespole
+
+technologies:
+  - img: img/logos/1.jpg
+  - img: img/logos/2.jpg
+  - img: img/logos/3.jpg
+  - img: img/logos/4.jpg
+  - img: img/logos/5.jpg
+  - img: img/logos/6.jpg
+  - img: img/logos/7.jpg
+  - img: img/logos/8.jpg   
+  - img: img/logos/9.jpg
+  - img: img/logos/10.jpg
+  - img: img/logos/11.jpg
+  - img: img/logos/12.jpg   
+   
+
+
+contact:
+  heading: Skontaktuj się z nami
+  subheading: 
+  # name: Your Name *
+  # name-required: Please enter your name.
+  # email: Your Email *
+  # email-required: Please enter your email address.
+  # phone: Your Phone *
+  # phone-required: Please enter your phone number.
+  # message: Your Message *
+  # message-required: Please enter a message.
+  # btn: Send Message
+
+  # js-url: '././mail/contact_me.php'
+  # js-success: 'Your message has been sent. '
+  # js-error: 'Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!'
+  # js-error-min: 'Sorry "+i+", it seems that my mail server is not responding. Please try again later!'

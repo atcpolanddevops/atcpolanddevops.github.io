@@ -1,0 +1,41 @@
+brand:
+  name: DevOps
+menu-string: Menu
+
+nav:
+  - title: współpraca
+    url: '#wspolpraca'
+  - title: propozycje
+    url: '#portfolio'
+  - title: repo & ALM
+    url: '#repo'
+  - title: plusy 
+    url: '#plus'
+  - title: Capacity Services
+    url: '#capacity'
+  - title: Nasi specjaliści
+    url: '#people'
+  - title: Kontakt
+    url: '#contact'
+
+copyright: Copyright &copy; Accenture 2018  | All rights reserved
+
+# social-buttons:
+#   - icon: fa fa-facebook
+#     url: '#'
+#   - icon: fa fa-linkedin
+#     url: '#'
+
+# quicklinks:
+#   - title: Privacy Policy
+#     url: '#'
+#   - title: Terms of Use
+#     url: '#'
+
+reponame:
+  phab: https://www.phacility.com/pricing/ 
+  bitbucket: https://bitbucket.org/product/pricing 
+  gitlab: https://about.gitlab.com/pricing/#gitlab-com 
+  github: https://github.com/pricing 
+  vsts: https://www.visualstudio.com/team-services/pricing/ 
+  jiraatl: https://www.atlassian.com/software/jira/pricing 
