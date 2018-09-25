@@ -1,30 +1,83 @@
 # Strona DevOps ATC Poland  
 
+## Foldery:
 
-------
+```
+_posts 
+       - zawiera elementy z sekcji "propozycje" (pliki z nazwami <data>-project-<number>.md)oraz "nasi specjaliści" (pliki z nazwami **<data>-people-<number>.md**)
 
-# Jekyll Theme based on Startbootstrap Agency
+_data 
+       - zawiera dane do prostej konfiguracji elementów wyświetlanych na stronie, podzielonych na odpowiednie sekcje (intro, ooperation, portfolio, plus, repo, capacity, people, technologies), które odnoszą sie do sekcji w pliku home.html poprzez id
 
-jekyll-theme-startbootstrap-agency is a Jekyll theme based on Start Bootstrap - Agency. You can see the [live demo](http://www.vrachas.com/jekyll-theme-startbootstrap-agency/).
+_layouts 
+       - zawiera strony w formacie html (home.html i default.html) 
 
-"Agency is a stylish, one page Bootstrap theme for agencies and small businesses. The design of Agency is based off of the Golden PSD Theme by Mathavan Jaya. You can download the PSD verison of this theme at FreebiesXpress.com."
+_saas 
+       - folder z plikami sass
 
-## Preview
+assets 
+       - zawiera wszystkie media oraz pliki css i js
 
-[![Agency Preview](https://startbootstrap.com/assets/img/templates/agency.jpg)](http://www.vrachas.com/jekyll-theme-startbootstrap-agency/)
+pominiety folder: _site 
 
-**[View Live Preview](http://www.vrachas.com/jekyll-theme-startbootstrap-agency/)**
-
-## Background
-
-The objective of this project is to provide a Jekyll theme that is line by line perfect replica of “Startbootstrap - Agency” and at the same time to be so dynamic that can be used as a starting point for   child themes.
-
-Currently the only difference between “Startbootstrap – Agency” and jekyll-theme-startbootstrap-agency as served with the default content is found in the final `css/agency.min.css` which is normal since the scss is compiled by different engines.
-
-https://github.com/y7kim/agency-jekyll-theme has not been updated for more that a year and it is still based in Bootstrap 3
+```
 
 
-## Features:
+## Pliki:
+
+```
+_config.yml 
+               - dotyczy podstawowej konfiguracji strony (ustawienia template, base url, pluginy itp.)
+
+s3_website.yml 
+               - plik stworzony przez gem s3_website do deploy'u strony na S3 
+```
+
+## Użytkowanie:
+
+### Sekcja propozycje:
+
+nazwa pliku np.: 2018-09-19-project-10.md
+
+```
+---
+title:                    # nazwa 
+modal-id:                 # id projektu (numerycznie np. 05)
+description:              # OPIS
+subheading:               # dodatkowe info (2-3 słowa, np. "CLOUD", "HOSTED", "Jenkins + AWS")
+image:                    # ścieżka do zdjęcia głównego (najczęściej: /img/portfolio/numer-full.jpg)
+thumbnail:                # ścieżka do małego zdjęcia ( img/portfolio/numer-thumb.jpg)
+people: ok. 20 osób       # liczba minimalnych lub przewidywanych osób w projekcie dla takiego rozwiązania
+cheap: false              # podział na sekcje: true - zostanie wyświetlone w sekcji "wersje open-source", false - w sekcji "wersje PEŁNE"
+curriculum: false         # rozróżnienie między cześcią "propozycje" (false), a "specjaliści" (true)
+---
+
+TUTAJ TEKST DO WYSWIETLANIA - opis tego rozwiązania
+```
+
+### Sekcja specjaliści:
+
+nazwa pliku np.: 2018-09-19-people-10.md
+
+```
+---
+title:                    # nazwa - tutaj imię
+modal-id:                 # id osoby (w formie "people-<numer>" np: people-6)
+description:              # nazwa stanowiska (np. Application Development Analyst)
+image:                    # zdjęcie CV (w folderze img/portfolio/)
+thumbnail:                # thumbnail z imieniem (zdjecie, w folderze /img/portfolio/)
+curriculum: true          # rozróżnienie między cześcią "propozycje" (false), a "specjaliści" (true)
+cv-info: true             # true - tak, jest zdjecie CV, false - brak 
+lodz: true                # lokalizacja: true - Łódź, false - Katowice 
+---
+```
+
+---
+# THEME: 
+
+## Agency Jekyll Theme based on Startbootstrap Agency
+
+### Features:
 - MIT License
 - Built to support the latest, stable releases of all major browsers and platforms.
 - Fully responsive HTML template created with Bootstrap 4
@@ -37,195 +90,7 @@ https://github.com/y7kim/agency-jekyll-theme has not been updated for more that 
 - Footer with social links, copyright information, and other links
 - SCSS files included for deeper customization options
 
-
-## Installation
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "jekyll-theme-startbootstrap-agency"
-```
-
-And add this line to your Jekyll site's `_config.yml`:
-
-```yaml
-theme: jekyll-theme-startbootstrap-agency
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install jekyll-theme-startbootstrap-agency
-
-## Usage
-
-`_config.yml`
-```
-title: [The title of your site]
-description: [A short description of your site's purpose]
-author: [The author of the website]
-
-sass: # Enables the conversion of css/agency.min.scss to  css/agency.min.css
-  style: compressed # Minify css/agency.min.css
-
-collections: # Enables additional data structures 
-  projects: # Enables _projects
-```
-`css/`
-- `agency.min.scss` Add any additional styling
-
-`_scss/`
-- `_variables.scss`
-```
-$primary: [hexcode of the primary color] !default;
-```
-- `_mixins.scss` Font Configuration
-- `_masthead.scss` Master Header
-```
- background-image: url('[Path to master header background image]');
-```
-- `_contact.scss`
-```
- background-image: url('[Path to contact section background image]');
-```
-`_data/`
-- `default.yml` Data used by the default layout
-```
-brand:
-  name: [Top left name]
-menu-string: [Collapsed menu text]
-
-nav: # Navbar links
-  - title: [Link title]
-    url: '[Link]'
-  ...
-  - title: [Link title]
-    url: '[Link]'
-
-copyright: [Copyright notice]
-
-social-buttons: # Footer social buttons
-  - icon: [Font awesome icon code]
-    url: '[Link]' 
-  ...
-  - icon: [Font awesome icon code]
-    url: '[Link]'
-
-quicklinks: # Footer links
-    - title: [Link title]
-    url: '[Link]'
-  ...
-  - title: [Link title]
-    url: '[Link]'
-
-modal: # Modal strings for l10n
-```
-- `home.yml` Data used by the homepage
-```
-intro: # Master header text
-
-services: # Services section 
-  heading: [Services Title]
-  subheading: [Services Subtile]
-  service: # List of services
-    - icon: [Font Awasome icon code]
-      heading: [Service Title]
-      text: [Service text]
-    ...
-    - icon: [Font Awasome icon code]
-      heading: [Service Title]
-      text: [Service text]
-
-
-portfolio: # portfolio section
-  heading: [Portfolio title]
-  subheading: [Portfolio subtitle]
-
-about: # About section
-  heading: [About title]
-  subheading: [About subtitle]
-  timeline: # List
-    - image: [Image path]
-      date: [Date]
-      title: [Title]
-      text: [Text]
-    ...
-    - image: [Image path]
-      date: [Date]
-      title: [Title]
-      text: [Text]
-
-  end1: [End bubble first line ]
-  end2: [End bubble second line ]
-  end3: [End bubble third line ]
-
-team:
-  heading: [Title] 
-  subheading: [Subtitle]
-  members: [List of members]
-    - name: [Member's name]
-      role: [Member's role]
-      img: [Member's image path]
-      social-buttons: [List of Member's Social Media profiles]
-        - icon: [Font Awasome icon code]
-          url: '[Link to Member's Social Media]' 
-        ...
-        - icon: [Font Awasome icon code]
-          url: '[Link to Member's Social Media]'
-
-    - name: [Member's name]
-      role: [Member's role]
-      img: [Member's image path]
-      social-buttons: [List of Member's Social Media profiles]
-        - icon: [Font Awasome icon code]
-          url: '[Link to Member's Social Media]' 
-        ...
-        - icon: [Font Awasome icon code]
-          url: '[Link to Member's Social Media]'
-
-  text: [Text under members list] 
-
-clients: # List of clients logos and links
-  - img: [Path to clients logo image]
-    url: '[Link to clients website]'
-  ...
-  - img: [Path to clients logo image]
-    url: '[Link to clients website]'
-
-contact: # Contact Section
-  heading: [Translateble string]
-  ... 
-  btn: [Translatable string]
-
-  js-url: '[Contact form target]'
-  js-success: '[Translatable string]'
-  js-error: '[Translatable string]' # Attention around " + firstName + "
-  js-error-min: '[Translatable string]' # Attention around "+i+"
-```
-`_layouts/`
-- `default.html` Default layout
-- `home.html` Home layout
-
-`js/`
-- `contact_me.js` Contact form checker and submitter
-
-`_projects/` Directory storing project data
-- `*.md` Project data
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/SotiriosVrachas/jekyll-theme-startbootstrap-agency/issues . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## Development
-
-To set up your environment to develop this theme, run `bundle install`.
-
-The theme is setup just like a normal Jekyll site! To test the theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using the theme. Edit pages, documents, data, etc. like normal to test the theme's contents. As you make modifications to the theme and to the content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
-
-## About
+### About
 
 jekyll-theme-startbootstrap-agency is an open source Jekyll theme based on [Start Bootstrap - Agency](https://github.com/BlackrockDigital/startbootstrap-agency) 
 
@@ -280,7 +145,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
 
-## License
+### License
 
 Copyright 2018 Sotirios Vrachas. The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
