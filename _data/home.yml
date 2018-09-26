@@ -22,6 +22,10 @@ portfolio:
   heading: Nasze Propozycje
   subheading: Pamiętaj - przedstawione propozycje są elastyczne, 
     możemy je dopasować pod konkretne wymagania.
+  section1heading: WERSJE OPEN-SOURCE
+  section2heading: WERSJE PEŁNE
+  text:  Aby zobaczyć szczegóły - kliknij na odpowiednią propozycję      # krotki opis pod obiema sekcjami 
+ 
 
 plus:
   heading: PLUSY 
@@ -52,7 +56,7 @@ plus:
 
 repo:
   heading: REPOZYTORIUM & ALM
-  subheading: Cenniki możliwych usług.
+  subheading: Cenniki możliwych usług - szczegóły w linkach.
   repoheading: REPOZYTORIUM
   almheading: ALM  
 
@@ -69,8 +73,8 @@ capacity:
 
 people:
   heading: Nasi specjaliści
-  subheading: 
-  text: Jestesmy zespolem specjalizujacym sie w automatyzacji procesow  # tekst o zespole
+  subheading: Aby zobaczyć jakie doświadczenie i umiejętności mają nasi specjaliści  kliknij w odpowiendnie imię.
+
 
 technologies:
   - img: img/logos/1.jpg
@@ -91,17 +95,3 @@ technologies:
 contact:
   heading: Skontaktuj się z nami
   subheading: 
-  # name: Your Name *
-  # name-required: Please enter your name.
-  # email: Your Email *
-  # email-required: Please enter your email address.
-  # phone: Your Phone *
-  # phone-required: Please enter your phone number.
-  # message: Your Message *
-  # message-required: Please enter a message.
-  # btn: Send Message
-
-  # js-url: '././mail/contact_me.php'
-  # js-success: 'Your message has been sent. '
-  # js-error: 'Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!'
-  # js-error-min: 'Sorry "+i+", it seems that my mail server is not responding. Please try again later!'
