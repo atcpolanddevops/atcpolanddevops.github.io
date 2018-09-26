@@ -20,18 +20,6 @@ nav:
 
 copyright: Copyright &copy; Accenture 2018  | All rights reserved
 
-# social-buttons:
-#   - icon: fa fa-facebook
-#     url: '#'
-#   - icon: fa fa-linkedin
-#     url: '#'
-
-# quicklinks:
-#   - title: Privacy Policy
-#     url: '#'
-#   - title: Terms of Use
-#     url: '#'
-
 reponame:
   phab: https://www.phacility.com/pricing/ 
   bitbucket: https://bitbucket.org/product/pricing 
