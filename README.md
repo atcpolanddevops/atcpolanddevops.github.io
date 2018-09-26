@@ -37,7 +37,7 @@ s3_website.yml
 
 ### Sekcja propozycje:
 
-nazwa pliku np.: 2018-09-19-project-10.md
+nazwa pliku np.: **2018-09-19-project-10.md**
 
 ```
 ---
@@ -57,7 +57,7 @@ TUTAJ TEKST DO WYSWIETLANIA - opis tego rozwiązania
 
 ### Sekcja specjaliści:
 
-nazwa pliku np.: 2018-09-19-people-10.md
+nazwa pliku np.: **2018-09-19-people-10.md**
 
 ```
 ---
@@ -72,103 +72,102 @@ lodz: true                # lokalizacja: true - Łódź, false - Katowice
 ---
 ```
 
+### home.yml:
+
+```
+
+# WSTEP 
+intro:
+  lead-in:
+  heading: 
+  btn: 
+
+# Sekcja o wspolpracy - 
+cooperation:
+  heading: 
+  subheading: 
+  service:              # glowne hasla (3 w jednym rzedzie)
+    - icon:             # ikonka fontawesome
+      heading:          # tytulowe haslo
+      text:             # opis
+
+
+# propozycje - "portfolio"
+portfolio:
+  heading: 
+  subheading: 
+  # podzial na 2 sekcje - podzial wizualny
+  section1heading: 
+  section2heading: 
+  text:                  # krotki opis pod obiema sekcjami 
+ 
+# Sekcja PLUSY - podzielona na 2-3 sekcje w jednym rzedzie 
+plus:
+  heading:  
+  subheading: 
+  icon: fa fa-check     # ikonka fontawesome
+  content:
+    - name:             # tytul/rodzaj 
+      text: " "
+      advantages:
+        - check:        # dokladny opis, w punktach 
+
+# Sekcja dot. cennikow uslug tj. Phabricator, Mantis, etc.
+# Poza tytulami, wszystko bezposrednio wymienione w pliku _layouts/index.html w sekcji o id: #repo 
+repo:
+  heading: 
+  subheading: 
+  repoheading: 
+  almheading: 
+
+# Sekcja o zasadach dobrej wspolpracy 
+capacity:
+  heading: 
+  subheading: 
+  rules:
+    - item:             # zasady wymienione w punkcie
+
+# Sekcja specjalisci
+people:
+  heading: 
+  subheading: 
+
+# Ikonki technologii - sciezki do zdjec 
+technologies:
+  - img: 
+
+# sekcja kontakt 
+contact:
+  heading: Skontaktuj się z nami
+  subheading: 
+  emails:
+    - email:             # wymienione emaile kontaktowe (na stronie link z odnosnikiem bezposrednio mailto:email)
+```
+
+### default.yml:
+
+```
+# Nazwa do wyswietlania w tytule
+brand:
+  name: 
+
+menu-string:            # string do przycisku menu (widok z telefonu)
+
+# navigation bar 
+nav:    
+  - title:              # nazwa linku 
+    url:                # odnosnik (jezeli do sekcji na stronie - poprzez id tej sekcji np. "#contact")
+
+
+copyright:              # tekst w stopce
+
+```
+
 ---
 # THEME: 
 
 ## Agency Jekyll Theme based on Startbootstrap Agency
 
-### Features:
-- MIT License
-- Built to support the latest, stable releases of all major browsers and platforms.
-- Fully responsive HTML template created with Bootstrap 4
-- Custom collapsing navigation with active classes, smooth page scrolling, and responsive fallback stylings
-- Services section with CSS only circle icons by Font Awesome
-- Portfolio grid with modal window popup previews for portfolio item details
-- About section with a responsive timeline, special thanks to Bootsnipp
-- Team member section with circle profile images and social media links
-- Contact form with validation - just add your server url to the `js-url` at `_data/home.yml`
-- Footer with social links, copyright information, and other links
-- SCSS files included for deeper customization options
-
 ### About
 
 jekyll-theme-startbootstrap-agency is an open source Jekyll theme based on [Start Bootstrap - Agency](https://github.com/BlackrockDigital/startbootstrap-agency) 
-
-```
-The MIT License (MIT)
-
-Copyright (c) 2013-2018 Blackrock Digital LLC
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-```
-
-Start Bootstrap - Agency is based on the [Bootstrap](https://github.com/twbs/bootstrap) framework.
-
-```
-The MIT License (MIT)
-
-Copyright (c) 2011-2018 Twitter, Inc.
-Copyright (c) 2011-2018 The Bootstrap Authors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-```
-
-### License
-
-Copyright 2018 Sotirios Vrachas. The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-```
-The MIT License (MIT)
-
-Copyright (c) 2018 Sotirios Vrachas
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-```
