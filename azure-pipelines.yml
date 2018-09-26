@@ -1,0 +1,18 @@
+#  Azure pipeline:
+language: ruby
+rvm:
+- 2.3.3
+
+# Install Jekyll
+install:
+  - gem install jekyll
+
+pool:
+  vmImage: 'Ubuntu 16.04'
+  
+variables:
+  buildConfiguration: 'Release'
+
+steps:
+- script: |
+    jekyll build
