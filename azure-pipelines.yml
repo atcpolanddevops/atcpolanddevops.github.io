@@ -8,9 +8,15 @@ steps:
   inputs:
     versionSpec: '>= 2.3'
     addToPath: true
+
 - script: |
     gem install jekyll 
     gem install bundler
-    bundle install --retry=3 --jobs=4
+    bundle --retry=3 --jobs=4
+  displayName: 'install jekyll & bundler'
+
+- task: JekyllBuild@1
+
+- script: |
     jekyll build
-  displayName: 'bundle install jekyll & build'
+  displayName: 'jekyll build site'
