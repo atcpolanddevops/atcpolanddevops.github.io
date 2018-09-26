@@ -95,3 +95,6 @@ technologies:
 contact:
   heading: Skontaktuj się z nami
   subheading: 
+  emails:
+    - email: devops_ldc@accenture.com
+    - email: ATC_Poland_DevOps@accenture.com
