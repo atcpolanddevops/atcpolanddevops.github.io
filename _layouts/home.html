@@ -34,7 +34,7 @@ layout: default
         <div class="intro-text">
           <div class="intro-lead-in">{{ site.data.home.intro.lead-in }}</div>
           <div class="intro-heading text-uppercase">{{ site.data.home.intro.heading }}</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#wspolpraca">{{ site.data.home.intro.btn }}</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#cooperation">{{ site.data.home.intro.btn }}</a>
         </div>
       </div>
     </header>
@@ -44,12 +44,12 @@ layout: default
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">{{ site.data.home.wspolpraca.heading }}</h2>
-            <h3 class="section-subheading text-muted">{{ site.data.home.wspolpraca.subheading }}</h3>
+            <h2 class="section-heading text-uppercase">{{ site.data.home.cooperation.heading }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.home.cooperation.subheading }}</h3>
           </div>
         </div>
         <div class="row text-center">
-          {%- for service in site.data.home.wspolpraca.service -%}
+          {%- for service in site.data.home.cooperation.service -%}
           {% assign ws = '' %}
           <div class="col-md-4">
             <span class="fa-stack fa-4x">

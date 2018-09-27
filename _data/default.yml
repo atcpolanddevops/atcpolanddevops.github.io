@@ -4,7 +4,7 @@ menu-string: Menu
 
 nav:
   - title: współpraca
-    url: '#wspolpraca'
+    url: '#cooperation'
   - title: propozycje
     url: '#portfolio'
   - title: repo & ALM
