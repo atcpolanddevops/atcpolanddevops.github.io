@@ -10,8 +10,19 @@ steps:
     addToPath: true
 
 - script: |
-    gem install jekyll 
-    gem install bundler
-    bundle --retry=3 --jobs=4
-    jekyll build
-  displayName: 'install jekyll & bundler, build'
+    echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+    echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
+    echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
+    source ~/.bashrc
+  displayName: 'path to gems'
+
+- script: |
+    gem install jekyll bundler
+    bundle install --retry=3 --jobs=4
+  displayName: 'install jekyll & bundler'
+
+- script: bundle 
+  displayName: 'bundle'
+
+- script: jekyll build
+  displayName: 'jekyll build site'
