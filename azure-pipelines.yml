@@ -13,10 +13,5 @@ steps:
     gem install jekyll 
     gem install bundler
     bundle --retry=3 --jobs=4
-  displayName: 'install jekyll & bundler'
-
-- task: JekyllBuild@1
-
-- script: |
     jekyll build
-  displayName: 'jekyll build site'
+  displayName: 'install jekyll & bundler, build'
