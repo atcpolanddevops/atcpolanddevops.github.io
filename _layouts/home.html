@@ -34,7 +34,9 @@ layout: default
         <div class="intro-text">
           <div class="intro-lead-in">{{ site.data.home.intro.lead-in }}</div>
           <div class="intro-heading text-uppercase">{{ site.data.home.intro.heading }}</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#cooperation">{{ site.data.home.intro.btn }}</a>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#popupModal">{{ site.data.home.intro.btn }}</a>
+          <br>
+          <a class="short-link" data-toggle="modal" data-target="#popupModal" style="color: #008a07; text-decoration: underline; cursor: pointer;">Nie widzisz obrazów?</a>
         </div>
       </div>
     </header>
@@ -168,7 +170,7 @@ layout: default
                 <li class="list-none-li"><a href="{{site.data.default.reponame.bitbucket}}">BITBUCKET</a></li>
                 <li class="list-none-li"><a href="{{site.data.default.reponame.gitlab}}">GITLAB</a></li>
                 <li class="list-none-li"><a href="{{site.data.default.reponame.github}}">GITHUB</a></li>
-                <li class="list-none-li"><a href="{{site.data.default.reponame.vsts}}">VISUAL STUDIO TEAM SERVICES</a></li>
+                <li class="list-none-li"><a href="{{site.data.default.reponame.vsts}}">AZURE DEVOPS</a></li>
               </ul>
           </div>
         </div>
@@ -279,18 +281,17 @@ layout: default
                     {% if project.lodz == true %}  
                       {% if project.cv-info == true %}
                       <div class="col-sm-6 portfolio-item">
-                        <a href="#portfolioModal{{ project.modal-id }}" class="portfolio-link" data-toggle="modal">
-                          <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                              <i class="fa fa-user fa-3x"></i>
-                            </div>
-                          </div>
-                          <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
+                        <a href="#portfolioModal{{ project.modal-id }}" class="portfolio-link btn btn-success btn-lg" role="button" aria-pressed="true"  data-toggle="modal">
+                          
+                          {{project.title}}
                         </a>
                       </div>
                       {% else %}
                       <div class="col-sm-6 portfolio-item">
-                        <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
+                        <a href="#" class="portfolio-link btn btn-success btn-lg" role="button" aria-pressed="true"  data-toggle="modal">
+                          
+                          {{project.title}}
+                        </a>
                       </div>
                       {%- endif -%}
                     {%- endif -%}
@@ -309,19 +310,17 @@ layout: default
                     {% if project.lodz == false %}  
                       {% if project.cv-info == true %}
                         <div class="col-sm-6 portfolio-item">
-                          <a href="#portfolioModal{{ project.modal-id }}" class="portfolio-link" data-toggle="modal">
-                            <div class="portfolio-hover">
-                              <div class="portfolio-hover-content">
-                                <i class="fa fa-user fa-3x"></i>
-                              </div>
-                            </div>
-                            <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
-                          </a>
-                        </div>
-                        {% else %}
-                        <div class="col-sm-6 portfolio-item">
-                          <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}" alt="">
-                        </div>
+                        <a href="#portfolioModal{{ project.modal-id }}" class="portfolio-link btn btn-success btn-lg" role="button" aria-pressed="true"  data-toggle="modal">
+                          
+                          {{project.title}}
+                        </a>
+                      </div>
+                      {% else %}
+                      <div class="col-sm-6 portfolio-item">
+                        <a href="#" class="portfolio-link btn btn-success btn-lg" role="button" aria-pressed="true"  data-toggle="modal">
+                          {{project.title}}
+                        </a>
+                      </div>
                       {%- endif -%}
                     {%- endif -%}
                   {%- endif -%}
