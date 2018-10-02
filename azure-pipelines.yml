@@ -19,10 +19,24 @@ steps:
 - script: |
     gem install jekyll bundler
     bundle install --retry=3 --jobs=4
-  displayName: 'install jekyll & bundler'
+  displayName: 'install jekyll & bundler'  
 
 - script: bundle 
   displayName: 'bundle'
 
 - script: jekyll build
   displayName: 'jekyll build site'
+
+- script: pip install awscli
+  displayName: 'install AWS CLI'
+
+- script: |
+    export AWS_ACCESS_KEY_ID=$(aws.secret_key)
+    export AWS_DEFAULT_REGION=$(aws.region)
+    export AWS_SECRET_ACCESS_KEY=$(aws.secret_access_key) 
+  displayName: 'export AWS credentials'
+
+- script: |
+    cd $(Build.Repository.LocalPath)
+    aws s3 cp -r _site/ s3://$(aws.bucket)/  
+  displayName: 'push to s3'
