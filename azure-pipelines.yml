@@ -29,7 +29,7 @@ steps:
 
 - script: |
     echo "python -m install --user --upgrade pip==9.0.3"
-    python -m install --user --upgrade pip==9.0.3
+    python -m pip install --user --upgrade pip==9.0.3
     export PATH=~/.local/bin:$PATH
     pip --version
   displayName: "install pip"
