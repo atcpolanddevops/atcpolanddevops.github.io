@@ -41,11 +41,17 @@ steps:
     echo "pip install  --user awscli"
     pip install awscli --upgrade --user
     echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+  displayName: 'install AWS CLI'
+
+- script: |
     source ~/.bashrc
+    cat ~/.bashrc
+    echo $PATH
+    whoami
+    ls ~/.local/bin/
     ~/.local/bin/aws --version
     aws --version
-    echo $PATH
-  displayName: 'install AWS CLI'
+  displayName: 'debug'
 
 - script: |
     export AWS_ACCESS_KEY_ID=$(aws.secret_key)
