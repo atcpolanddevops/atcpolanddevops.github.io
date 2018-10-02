@@ -30,13 +30,17 @@ steps:
 - script: |
     echo "python -m install --user --upgrade pip==9.0.3"
     python -m pip install --user --upgrade pip==9.0.3
-    export PATH=~/.local/bin:$PATH
+    echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+    source ~/.bashrc
     pip --version
   displayName: "install pip"
 
 - script: |
     echo "pip install awscli --user"
     pip install awscli --user
+    echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
+    source ~/.bashrc
+    aws --version
   displayName: 'install AWS CLI'
 
 - script: |
