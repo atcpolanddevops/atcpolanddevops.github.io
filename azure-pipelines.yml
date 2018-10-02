@@ -24,7 +24,7 @@ steps:
 - script: bundle 
   displayName: 'bundle'
 
-- script: jekyll build
+- script: bundle exec jekyll build
   displayName: 'jekyll build site'
 
 - script: pip install awscli
