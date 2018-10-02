@@ -39,11 +39,12 @@ steps:
 
 - script: |
     echo "pip install  --user awscli"
-    pip install  --user awscli
+    pip install awscli --upgrade --user
     echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
     ~/.local/bin/aws --version
     aws --version
+    echo $PATH
   displayName: 'install AWS CLI'
 
 - script: |
