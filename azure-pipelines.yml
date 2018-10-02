@@ -52,7 +52,7 @@ steps:
     echo "----"
     ls -ltr ~/.local/bin/aws
     echo "----"
-    ls -ltr ~/
+    ls -ltra ~/
     echo "----"
     ~/.local/bin/aws --version
     aws --version
