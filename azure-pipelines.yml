@@ -33,7 +33,10 @@ steps:
     export PATH=~/.local/bin:$PATH
     source ~/.bash_profile
     pip --version
-    pip install awscli
+  displayName: "install pip"
+
+- script: |
+    pip install awscli --user
   displayName: 'install AWS CLI'
 
 - script: |
