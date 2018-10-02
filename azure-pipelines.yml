@@ -28,14 +28,14 @@ steps:
   displayName: 'jekyll build site'
 
 - script: |
-    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-    python get-pip.py --user
+    echo "python -m install --user --upgrade pip==9.0.3"
+    python -m install --user --upgrade pip==9.0.3
     export PATH=~/.local/bin:$PATH
-    source ~/.bash_profile
     pip --version
   displayName: "install pip"
 
 - script: |
+    echo "pip install awscli --user"
     pip install awscli --user
   displayName: 'install AWS CLI'
 
