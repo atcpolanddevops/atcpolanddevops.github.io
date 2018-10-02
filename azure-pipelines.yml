@@ -28,10 +28,8 @@ steps:
   displayName: 'jekyll build site'
 
 - script: |
-    echo "curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py""
-    curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-    echo "python3 get-pip.py --user"
-    python3 get-pip.py --user
+    echo "python3 -m install  pip3 --user --upgrade pip3==9.0.3"
+    python3 -m pip3 install --user --upgrade pip3==9.0.3
     echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
     pip3 --version
