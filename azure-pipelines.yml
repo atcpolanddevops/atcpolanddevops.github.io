@@ -27,7 +27,9 @@ steps:
 - script: bundle exec jekyll build
   displayName: 'jekyll build site'
 
-- script: sudo apt-get install -y python-setuptools
+- script: |
+    sudo apt-get install -y python-setuptools
+    pip install setuptools wheel --upgrade
   displayName: "Setuptools installation"
 
 - script: |
