@@ -28,18 +28,19 @@ steps:
   displayName: 'jekyll build site'
 
 - script: |
-    echo "python -m install --user --upgrade pip==9.0.3"
-    python -m pip install --user --upgrade pip==9.0.3
+    echo "python3 -m install  pip3 --user --upgrade pip==9.0.3"
+    python3 -m pip3 install --user --upgrade pip==9.0.3
     echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
-    pip --version
-  displayName: "install pip"
+    pip3 --version
+  displayName: "install pip3"
 
 - script: |
-    echo "pip install awscli --user"
-    pip install awscli --user
+    echo "pip3 install  --user awscli"
+    pip3 install  --user awscli
     echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
+    ~/.local/bin/aws --version
     aws --version
   displayName: 'install AWS CLI'
 
