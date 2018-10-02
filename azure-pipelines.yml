@@ -28,16 +28,13 @@ steps:
   displayName: 'jekyll build site'
 
 - script: |
-    echo "python3 -m install  pip3 --user --upgrade pip3==9.0.3"
-    python3 -m pip3 install --user --upgrade pip3==9.0.3
-    echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
-    source ~/.bashrc
-    pip3 --version
-  displayName: "install pip3"
+    export LC_ALL=C
+    pip --version
+  displayName: "Language set, pip version"
 
 - script: |
-    echo "pip3 install  --user awscli"
-    pip3 install  --user awscli
+    echo "pip install  --user awscli"
+    pip install  --user awscli
     echo 'export PATH=~/.local/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
     ~/.local/bin/aws --version
