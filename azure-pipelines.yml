@@ -54,5 +54,5 @@ steps:
     export AWS_SECRET_ACCESS_KEY=$(aws.secret_access_key) 
     echo "PUSH _site FOLDER TO S3"
     cd $(Build.Repository.LocalPath)
-    aws s3 cp -r _site/ s3://$(aws.bucket)/  
+    aws s3 cp _site/ s3://$(aws.bucket)/  --recursive 
   displayName: 'push to aws s3'
