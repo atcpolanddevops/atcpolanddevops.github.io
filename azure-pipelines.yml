@@ -38,6 +38,7 @@ steps:
   displayName: "Language set, pip version"
 
 - script: |
+    echo "INSTALL AWS CLI"
     echo "pip install  --user awscli"
     pip install awscli --upgrade --user
     echo 'export PATH=~/.local/bin:$PATH' 
@@ -47,15 +48,11 @@ steps:
     ~/.local/bin/aws --version
     aws --version
     echo "----"
-  displayName: 'install AWS CLI'
-
-- script: |
+    echo "EXPORT AWS CREDENTIALS"
     export AWS_ACCESS_KEY_ID=$(aws.secret_key)
     export AWS_DEFAULT_REGION=$(aws.region)
     export AWS_SECRET_ACCESS_KEY=$(aws.secret_access_key) 
-  displayName: 'export AWS credentials'
-
-- script: |
+    echo "PUSH _site FOLDER TO S3"
     cd $(Build.Repository.LocalPath)
     aws s3 cp -r _site/ s3://$(aws.bucket)/  
-  displayName: 'push to s3'
+  displayName: 'push to aws s3'
