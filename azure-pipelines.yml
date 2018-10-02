@@ -47,8 +47,13 @@ steps:
     source ~/.bashrc
     cat ~/.bashrc
     echo $PATH
+    echo "----"
     whoami
-    ls ~/.local/bin/
+    echo "----"
+    ls -ltr ~/.local/bin/aws
+    echo "----"
+    ls -ltr ~/
+    echo "----"
     ~/.local/bin/aws --version
     aws --version
   displayName: 'debug'
