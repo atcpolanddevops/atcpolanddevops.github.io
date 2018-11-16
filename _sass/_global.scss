@@ -44,11 +44,7 @@ section {
     @include serif-font;
   }
 }
-@media(min-width:768px) {
-  section {
-    padding: 150px 0;
-  }
-}
+
 
 // Button Styles
 .btn {
@@ -95,3 +91,32 @@ img::selection {
 img::-moz-selection {
   background: transparent;
 }
+
+// media:
+
+// @media (max-width: 757px) {
+//   .btn-xl {
+//     font-size: 23px;
+//     padding: 20px 40px;
+//   }
+// }
+
+@media(min-width:768px) {
+  section {
+    padding: 150px 0;
+  }
+}
+
+@media  (max-width: 1194px) {
+  
+  .btn-xl{
+    font-size: 17px;
+    padding: 12px 0px;
+  }
+
+  .btn {
+    padding: 0.375 rem;
+  }
+
+}
+

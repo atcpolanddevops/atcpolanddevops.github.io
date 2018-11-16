@@ -28,7 +28,7 @@
         font-weight: 400;
         padding: 0.75em 0;
         letter-spacing: 1px;
-        color: black;
+        color: #0B7110;
         @include heading-font;
         &.active,
         &:hover {
@@ -39,9 +39,21 @@
   }
 }
 
+@media (max-width: 1194px) {
+  .col-sm-6.portfolio-item {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
 
+@media (min-width: 760) and (max-width: 980px) {
+  .col-sm-6.portfolio-item {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
 
-@media(min-width:992px) {
+@media(min-width:960px) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -59,7 +71,8 @@
     .navbar-nav {
       .nav-item {
         .nav-link {
-          padding: 1.1em 1em !important;
+          padding: 0.7em 0.7em !important;
+          font-size: 80%;
         }
       }
     }
@@ -74,7 +87,7 @@
       .navbar-nav {
       .nav-item {
         .nav-link {
-          font-size: 90%;
+          font-size: 80%;
           font-weight: 400;
           padding: 0.75em 0;
           letter-spacing: 1px;
