@@ -5,7 +5,10 @@ intro:
 
 cooperation:
   heading: Współpraca z Devops ATC
-  subheading: Jakie korzyści z tego wynikają?
+  subheading: Krótkie wyjaśnienie
+  section1heading: Na czym polega przewaga korzystania z rozwiązań DevOps-owych? 
+  section2heading: Jakie korzyści z tego wynikają?
+  img: img/wyjasnienie.jpg
   service:
     - icon: fa fa-money
       heading: OSZCZĘDNOŚĆ PIENIĘDZY

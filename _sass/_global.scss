@@ -43,6 +43,13 @@ section {
     text-transform: none;
     @include serif-font;
   }
+  .img-margin {
+    margin-bottom: 55px;
+  }
+
+  #img-wyjasnienie {
+    max-width: 1000px;
+  }
 }
 
 
