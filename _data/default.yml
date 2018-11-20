@@ -5,7 +5,7 @@ menu-string: Menu
 nav:
   - title: Cooperation
     url: '#cooperation'
-  - title: Propositions
+  - title: Example Solutions
     url: '#portfolio'
   - title: Repositories & ALM
     url: '#repo'
@@ -13,7 +13,7 @@ nav:
     url: '#plus'
   - title: Principles
     url: '#capacity'
-  - title: Experts
+  - title: Our Experts
     url: '#people'
   - title: Contact
     url: '#contact'

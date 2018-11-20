@@ -6,9 +6,9 @@ intro:
 cooperation:
   heading: Cooperation with Devops ATC
   subheading: Short description
-  section1heading: Na czym polega przewaga korzystania z rozwiązań DevOps-owych? 
-  section2heading: Jakie korzyści z tego wynikają?
-  img: img/wyjasnienie.jpg
+  section1heading: Why DevOps makes such a difference (when it comes to quality of work)?  
+  section2heading: What are the advantages?
+  img: img/drawing2.png
   service:
     - icon: fa fa-money
       heading: SAVE MONEY
@@ -22,17 +22,16 @@ cooperation:
 
 
 portfolio:
-  heading: Our propositions
-  subheading: Pamiętaj - przedstawione propozycje są elastyczne, 
-    możemy je dopasować pod konkretne wymagania.
+  heading: Sample offers
+  subheading: Remember, these offers are just examples. We can customize them based on your needs.
   section1heading: OPEN-SOURCE VERSION
   section2heading: FULL VERSION
-  text: In order that you see more informations - click to right proposiotion      # krotki opis pod obiema sekcjami 
+  text: Click on offer, to see the details      # krotki opis pod obiema sekcjami 
  
 
 plus:
   heading: BENEFITS
-  subheading: Na co wpłyną nasze rozwiązania?
+  subheading: How our solutions will change your work?
   icon: fa fa-check
   content:
     - name:  TEAM
@@ -65,7 +64,7 @@ repo:
 
 capacity:
   heading: CAPACITY SERVICE
-  subheading: Wypożyczenie specjalistów DevOps - zasady dobrej współpracy.
+  subheading: The principles for good cooperation
   rules:
     - item: Ekspert DevOps wykonuje zadania z zakresu DevOps wskazane przez TLa zespołu projektowego zgodnie z ogólnymi zasadami współpracy projektów z ATC
     - item: Współpracę warto rozpocząć od omówienia sytuacji projektowej i wspólnego wyznaczenia celów i planu. Spotkanie takie może się odbyć w szerszym gronie, angażując innych doświadczonych ekspertów devops.
@@ -76,8 +75,7 @@ capacity:
 
 people:
   heading: Our experts
-  subheading: Aby zobaczyć jakie doświadczenie i umiejętności mają nasi specjaliści  kliknij w odpowiendnie imię.
-
+  subheading: Click on name for detailed experiences and skills  
 
 technologies:
   - img: img/logos/1.jpg
@@ -96,7 +94,7 @@ technologies:
 
 
 contact:
-  heading: Contact with us
+  heading: Contact us
   subheading: 
   emails:
     - email: devops_ldc@accenture.com
