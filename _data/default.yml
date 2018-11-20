@@ -3,19 +3,19 @@ brand:
 menu-string: Menu
 
 nav:
-  - title: współpraca
+  - title: Cooperation
     url: '#cooperation'
-  - title: propozycje
+  - title: Propositions
     url: '#portfolio'
-  - title: repo & ALM
+  - title: Repositories & ALM
     url: '#repo'
-  - title: plusy 
+  - title: Benefits
     url: '#plus'
-  - title: Zasady
+  - title: Principles
     url: '#capacity'
-  - title: Specjaliści
+  - title: Experts
     url: '#people'
-  - title: Kontakt
+  - title: Contact
     url: '#contact'
 
 copyright: Copyright &copy; Accenture 2018  | All rights reserved
