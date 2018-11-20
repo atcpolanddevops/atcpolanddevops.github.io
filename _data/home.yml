@@ -1,41 +1,41 @@
 intro:
   lead-in: ""
   heading: DevOps ATC POLAND
-  btn: Zobacz Więcej
+  btn: See more
 
 cooperation:
-  heading: Współpraca z Devops ATC
-  subheading: Krótkie wyjaśnienie
+  heading: Cooperation with Devops ATC
+  subheading: Short description
   section1heading: Na czym polega przewaga korzystania z rozwiązań DevOps-owych? 
   section2heading: Jakie korzyści z tego wynikają?
   img: img/drawing2.png
   service:
     - icon: fa fa-money
-      heading: OSZCZĘDNOŚĆ PIENIĘDZY
+      heading: SAVE MONEY
       text: Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
     - icon: fa fa-male
-      heading: WARTOŚĆ DLA MANAGEMENTU
+      heading: VALUE FOR MANAGEMENT
       text: Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
     - icon: fa fa-briefcase
-      heading: WARTOŚĆ DLA BIZNESU
+      heading: VALUE FOR BUSINESS
       text: Krótszy czas od pomysłu do wdrożenia go na produkcję.
 
 
 portfolio:
-  heading: Nasze Propozycje
+  heading: Our propositions
   subheading: Pamiętaj - przedstawione propozycje są elastyczne, 
     możemy je dopasować pod konkretne wymagania.
-  section1heading: WERSJE OPEN-SOURCE
-  section2heading: WERSJE PEŁNE
-  text:  Aby zobaczyć szczegóły - kliknij na odpowiednią propozycję      # krotki opis pod obiema sekcjami 
+  section1heading: OPEN-SOURCE VERSION
+  section2heading: FULL VERSION
+  text: In order that you see more informations - click to right proposiotion      # krotki opis pod obiema sekcjami 
  
 
 plus:
-  heading: PLUSY 
+  heading: BENEFITS
   subheading: Na co wpłyną nasze rozwiązania?
   icon: fa fa-check
   content:
-    - name:  ZESPÓŁ
+    - name:  TEAM
       text: " "
       advantages:
         - check: Łatwiejszy wgląd w wykonaną pracę 
@@ -49,7 +49,7 @@ plus:
     #     - check: 16h / miesiąc
     #     - check: 192h / rok 
 
-    - name: PIENIĄDZE
+    - name: MONEY
       text: " "
       advantages:
         - check: Krótszy czas od wdrożenia na produkcję
@@ -58,9 +58,9 @@ plus:
 
 
 repo:
-  heading: REPOZYTORIUM & ALM
-  subheading: Cenniki możliwych usług - szczegóły w linkach.
-  repoheading: REPOZYTORIUM
+  heading: REPOSITORY & ALM
+  subheading: Service price list - more informations in link.
+  repoheading: REPOSITORY
   almheading: ALM  
 
 capacity:
@@ -75,7 +75,7 @@ capacity:
 
 
 people:
-  heading: Nasi specjaliści
+  heading: Our experts
   subheading: Aby zobaczyć jakie doświadczenie i umiejętności mają nasi specjaliści  kliknij w odpowiendnie imię.
 
 
@@ -96,7 +96,7 @@ technologies:
 
 
 contact:
-  heading: Skontaktuj się z nami
+  heading: Contact with us
   subheading: 
   emails:
     - email: devops_ldc@accenture.com
