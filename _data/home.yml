@@ -12,14 +12,23 @@ cooperation:
   service:
     - icon: fa fa-money
       heading: SAVE MONEY
-      text: Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
+      text: Developers do not waste time on builds, tests and releases, because they are automated
+      #Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
     - icon: fa fa-male
       heading: VALUE FOR MANAGEMENT
-      text: Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
+      text: Easier insight into developers' work (using statistics and custom dashboards)
+      #Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
     - icon: fa fa-briefcase
       heading: VALUE FOR BUSINESS
-      text: Krótszy czas od pomysłu do wdrożenia go na produkcję.
-
+      text: Faster translations of the ideas into functioning production.
+      # Krótszy czas od pomysłu do wdrożenia go na produkcję.
+      # ----------------------------------------------------
+      # Droga od pomysłu na działalność 
+      # gospodarczą do funkcjonującego i produkującego zakładu ze 
+      # stałą załogą to bardzo długi i skomplikowany proces.
+      #
+      # Translating an idea into a functioning productive 
+      # company with its own payroll is a very long, complicated process.
 
 portfolio:
   heading: Sample offers
