@@ -1,5 +1,8 @@
 #  Azure pipeline:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/ruby
+trigger:
+- master
+
 pool:
   vmImage: 'Ubuntu-16.04' # other options: 'macOS-10.13', 'VS2017-Win2016'
 
