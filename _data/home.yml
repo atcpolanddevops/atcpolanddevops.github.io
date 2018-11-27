@@ -75,11 +75,11 @@ capacity:
   heading: CAPACITY SERVICE
   subheading: The principles for good cooperation
   rules:
-    - item: Ekspert DevOps wykonuje zadania z zakresu DevOps wskazane przez TLa zespołu projektowego zgodnie z ogólnymi zasadami współpracy projektów z ATC
-    - item: Współpracę warto rozpocząć od omówienia sytuacji projektowej i wspólnego wyznaczenia celów i planu. Spotkanie takie może się odbyć w szerszym gronie, angażując innych doświadczonych ekspertów devops.
-    - item: Zakładamy możliwość wymieniania się zadaniami w ramach członków zespołu DevOps, aby zapewnić odpowiednią jakość dostarczanego rozwiązania poprzez wykorzystanie wiedzy danej osoby do odpowiedniego zadania
-    - item: W razie potrzeby bezpośredniego kontaktu ekspert DevOps może pracować w lokalizacji zespołu projektowego do 50% czasu
-    - item: Rekomendowanym sposobem pracy jest Agile/Scrum, gdzie TL zespołu projektowego pełni rolę Product Ownera, a jeden lub więcej ekspertów DevOps i opcjonalnie programista z projektu składają się na zespół dostarczający rozwiązania DevOps
+    - item: DevOps expert performs tasks from DevOps field wich TL of a project instructed, in accordance with general pronciples of project cooperation in ATC
+    - item: Our cooperation should start with discussion of project situation to set a goal and plan how to manage it. We can discuss it broadly, involving oter experienced DevOps experts
+    - item: We assume the ability to exchange tasks within DevOps team members to ensure the right quality of the solution provided by the knowledge of all experts (if someone has more experience in the field of current task, it is recommended to give him this task)
+    - item: In case of the need of direct contact, a DevOps expert can work in the project team location up to 50% of the time
+    - item: An Agile / Scrum way of working is recommended, where the team that delivers the DevOps solutions consists of":" the TL of the project team , who acts as the Product Owner, one or more DevOps experts and, optionally, the programmer from the project 
 
 
 people:
