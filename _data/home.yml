@@ -6,7 +6,7 @@ intro:
 cooperation:
   heading: Cooperation with Devops ATC
   subheading: Short description
-  section1heading: Why DevOps makes such a difference (when it comes to quality of work)?  
+  section1heading: Why DevOps?  
   section2heading: What are the advantages?
   img: img/drawing2.png
   service:
@@ -20,7 +20,7 @@ cooperation:
       #Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
     - icon: fa fa-briefcase
       heading: VALUE FOR BUSINESS
-      text: Faster translations of the ideas into functioning production.
+      text: Faster translations of the ideas into functioning product.
       # Krótszy czas od pomysłu do wdrożenia go na produkcję.
       # ----------------------------------------------------
       # Droga od pomysłu na działalność 
@@ -46,9 +46,9 @@ plus:
     - name:  TEAM
       text: " "
       advantages:
-        - check: Łatwiejszy wgląd w wykonaną pracę 
-        - check: Szybki wgląd do logów budowy oraz deployu aplikacji
-        - check: Prostsza wspołpraca między developerami
+        - check: Improve collaboration between teams 
+        - check: Faster build and deploy log check 
+        - check: Increase in productivity (When you see the point, you know it's worth it)
         
     # - name: CZAS
     #   text: "przykładowo:"
@@ -60,9 +60,9 @@ plus:
     - name: MONEY
       text: " "
       advantages:
-        - check: Krótszy czas od wdrożenia na produkcję
-        - check: Prostsze eksperymentowanie dzięki łatwej możliwości wycofania zmian
-        - check: Większa niezawodność deploymentów
+        - check: Early detection and faster correction of defects
+        - check: More stable operating environment (we have better deploys)
+        - check: Faster delivery (because it's continuous!)
 
 
 repo:
