@@ -12,11 +12,11 @@ cooperation:
   service:
     - icon: fa fa-money
       heading: SAVE MONEY
-      text: Developers do not waste time on builds, tests and releases, because they are automated
+      text: Developers do not waste time on builds, tests and releases (they are automated!)
       #Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
     - icon: fa fa-male
       heading: VALUE FOR MANAGEMENT
-      text: Easier insight into developers' work (using statistics and custom dashboards)
+      text: Easier insight into developers work (using statistics and custom dashboards)
       #Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
     - icon: fa fa-briefcase
       heading: VALUE FOR BUSINESS
@@ -40,7 +40,7 @@ portfolio:
 
 plus:
   heading: BENEFITS
-  subheading: How our solutions will change your work?
+  subheading: How our solutions will affect your work?
   icon: fa fa-check
   content:
     - name:  TEAM
@@ -48,7 +48,7 @@ plus:
       advantages:
         - check: Improve collaboration between teams 
         - check: Faster build and deploy log check 
-        - check: Increase in productivity (When you see the point, you know it's worth it)
+        - check: Increase in productivity 
         
     # - name: CZAS
     #   text: "przykładowo:"
