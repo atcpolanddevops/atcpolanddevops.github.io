@@ -1,46 +1,54 @@
 intro:
-  lead-in: " "
+  lead-in: ""
   heading: DevOps ATC POLAND
-  btn: Zobacz Więcej
+  btn: See more
 
 cooperation:
-  heading: Współpraca z Devops ATC
-  subheading: Krótkie wyjaśnienie
-  section1heading: Na czym polega przewaga korzystania z rozwiązań DevOps-owych? 
-  section2heading: Jakie korzyści z tego wynikają?
-  img: img/wyjasnienie.jpg
+  heading: Cooperation with Devops ATC
+  subheading: Short description
+  section1heading: Why we recommend DevOps?  
+  section2heading: What are the advantages?
+  img: img/drawing2.png
   service:
     - icon: fa fa-money
-      heading: OSZCZĘDNOŚĆ PIENIĘDZY
-      text: Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
+      heading: SAVE MONEY
+      text: Developers do not waste time on builds, tests and releases (they are automated!)
+      #Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
     - icon: fa fa-male
-      heading: WARTOŚĆ DLA MANAGEMENTU
-      text: Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
+      heading: VALUE FOR MANAGEMENT
+      text: Easier insight into developers work (using statistics and custom dashboards)
+      #Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
     - icon: fa fa-briefcase
-      heading: WARTOŚĆ DLA BIZNESU
-      text: Krótszy czas od pomysłu do wdrożenia go na produkcję.
-
+      heading: VALUE FOR BUSINESS
+      text: Faster translations of the ideas into functioning product.
+      # Krótszy czas od pomysłu do wdrożenia go na produkcję.
+      # ----------------------------------------------------
+      # Droga od pomysłu na działalność 
+      # gospodarczą do funkcjonującego i produkującego zakładu ze 
+      # stałą załogą to bardzo długi i skomplikowany proces.
+      #
+      # Translating an idea into a functioning productive 
+      # company with its own payroll is a very long, complicated process.
 
 portfolio:
-  heading: Nasze Propozycje
-  subheading: Pamiętaj - przedstawione propozycje są elastyczne, 
-    możemy je dopasować pod konkretne wymagania.
-  section1heading: WERSJE OPEN-SOURCE
-  section2heading: WERSJE PEŁNE
-  text:  Aby zobaczyć szczegóły - kliknij na odpowiednią propozycję      # krotki opis pod obiema sekcjami 
+  heading: Sample offers
+  subheading: Remember, these offers are just examples. We can customize them based on your needs.
+  section1heading: OPEN-SOURCE VERSION
+  section2heading: FULL VERSION
+  text: Click on offer, to see the details      # krotki opis pod obiema sekcjami 
  
 
 plus:
-  heading: PLUSY 
-  subheading: Na co wpłyną nasze rozwiązania?
+  heading: BENEFITS
+  subheading: How our solutions will affect your work?
   icon: fa fa-check
   content:
-    - name:  ZESPÓŁ
+    - name:  TEAM
       text: " "
       advantages:
-        - check: Łatwiejszy wgląd w wykonaną pracę 
-        - check: Szybki wgląd do logów budowy oraz deployu aplikacji
-        - check: Prostsza wspołpraca między developerami
+        - check: Improve collaboration between teams 
+        - check: Faster build and deploy log check 
+        - check: Increase productivity 
         
     # - name: CZAS
     #   text: "przykładowo:"
@@ -49,35 +57,37 @@ plus:
     #     - check: 16h / miesiąc
     #     - check: 192h / rok 
 
-    - name: PIENIĄDZE
+    - name: MONEY
       text: " "
       advantages:
-        - check: Krótszy czas od wdrożenia na produkcję
-        - check: Prostsze eksperymentowanie dzięki łatwej możliwości wycofania zmian
-        - check: Większa niezawodność deploymentów
+        - check: Early detection and faster correction of defects
+        - check: More stable operating environment (better deploys)
+        - check: Faster delivery (because it's continuous!)
 
 
 repo:
-  heading: REPOZYTORIUM & ALM
-  subheading: Cenniki możliwych usług - szczegóły w linkach.
-  repoheading: REPOZYTORIUM
+  heading: REPOSITORY & ALM
+  subheading: Service pricing - more information in links.
+  repoheading: REPOSITORY
   almheading: ALM  
 
 capacity:
   heading: CAPACITY SERVICE
-  subheading: Wypożyczenie specjalistów DevOps - zasady dobrej współpracy.
+  subheading: The principles for good cooperation
   rules:
-    - item: Ekspert DevOps wykonuje zadania z zakresu DevOps wskazane przez TLa zespołu projektowego zgodnie z ogólnymi zasadami współpracy projektów z ATC
-    - item: Współpracę warto rozpocząć od omówienia sytuacji projektowej i wspólnego wyznaczenia celów i planu. Spotkanie takie może się odbyć w szerszym gronie, angażując innych doświadczonych ekspertów devops.
-    - item: Zakładamy możliwość wymieniania się zadaniami w ramach członków zespołu DevOps, aby zapewnić odpowiednią jakość dostarczanego rozwiązania poprzez wykorzystanie wiedzy danej osoby do odpowiedniego zadania
-    - item: W razie potrzeby bezpośredniego kontaktu ekspert DevOps może pracować w lokalizacji zespołu projektowego do 50% czasu
-    - item: Rekomendowanym sposobem pracy jest Agile/Scrum, gdzie TL zespołu projektowego pełni rolę Product Ownera, a jeden lub więcej ekspertów DevOps i opcjonalnie programista z projektu składają się na zespół dostarczający rozwiązania DevOps
-
+ - item: DevOps expert performs tasks from DevOps field which TL instructed, in accordance with general principles of project cooperation in ATC
+    - item: Our cooperation should start with discussion of project situation to set a goal and plan how to manage it. We can discuss it broadly, involving other experienced DevOps experts
+    - item: We assume the ability to exchange tasks within DevOps team members to ensure the right quality of the solution provided by the knowledge of all experts (if someone has more experience in the field of current task, it is recommended to give him this task)
+    - item: In case of direct contact needs, a DevOps expert can work in the project team location up to 50% of the time
+    - item: An Agile / Scrum way of working is re commended, where the team that delivers the DevOps solutions consists of 
+  agile:
+    - it: TL of the project team (who acts as the Product Owner), 
+    - it: One or more DevOps experts,
+    - it: The programmer from the project (optionally).
 
 people:
-  heading: Nasi specjaliści
-  subheading: Aby zobaczyć jakie doświadczenie i umiejętności mają nasi specjaliści  kliknij w odpowiendnie imię.
-
+  heading: Our experts
+  subheading: Click on name for detailed experiences and skills  
 
 technologies:
   - img: img/logos/1.jpg
@@ -96,7 +106,7 @@ technologies:
 
 
 contact:
-  heading: Skontaktuj się z nami
+  heading: Contact us
   subheading: 
   emails:
     - email: devops_ldc@accenture.com
