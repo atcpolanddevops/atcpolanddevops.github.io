@@ -75,7 +75,7 @@ capacity:
   heading: CAPACITY SERVICE
   subheading: The principles for good cooperation
   rules:
- - item: DevOps expert performs tasks from DevOps field which TL instructed, in accordance with general principles of project cooperation in ATC
+    - item: DevOps expert performs tasks from DevOps field which TL instructed, in accordance with general principles of project cooperation in ATC
     - item: Our cooperation should start with discussion of project situation to set a goal and plan how to manage it. We can discuss it broadly, involving other experienced DevOps experts
     - item: We assume the ability to exchange tasks within DevOps team members to ensure the right quality of the solution provided by the knowledge of all experts (if someone has more experience in the field of current task, it is recommended to give him this task)
     - item: In case of direct contact needs, a DevOps expert can work in the project team location up to 50% of the time
@@ -84,6 +84,7 @@ capacity:
     - it: TL of the project team (who acts as the Product Owner), 
     - it: One or more DevOps experts,
     - it: The programmer from the project (optionally).
+
 
 people:
   heading: Our experts
