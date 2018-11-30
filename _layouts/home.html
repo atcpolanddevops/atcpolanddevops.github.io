@@ -87,8 +87,6 @@ layout: default
           </div>
         </div>
 
-
-
         <div class="row">
           {%- for project in site.posts -%}
           {% assign ws = '' %}
@@ -261,6 +259,15 @@ layout: default
             {% assign ws = '' %}              
             <ul class="list-none">
               <li class="list-none-li"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
+            </ul>
+            {%- endfor -%}
+            {% assign ws = '' %}
+
+            {%- for i in site.data.home.capacity.agile -%}
+            {% assign ws = '' %}  
+            <!-- LIST ITEMS FOR LAST  RULE! CHANGE IN ORDER OF RULE WILL CHANGE SENSE OF MEANING-->
+            <ul class="list-none">
+              <li class="list-none-li" style="padding-left: 1.7em; font-size: 98%;"><i class="fa fa-caret-right" aria-hidden="true"></i>   {{ i.it }}</li>
             </ul>
             {%- endfor -%}
             {% assign ws = '' %}
