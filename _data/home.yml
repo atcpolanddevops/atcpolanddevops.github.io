@@ -80,9 +80,9 @@ capacity:
     - item: We assume the ability to exchange tasks within DevOps team members to ensure the right quality of the solution provided by the knowledge of all experts (if someone has more experience in the field of current task, it is recommended to give him this task)
     - item: In case of direct contact needs, a DevOps expert can work in the project team location up to 50% of the time
     - item: An Agile / Scrum way of working is re commended, where the team that delivers the DevOps solutions consists of agile:
-    - it: TL of the project team (who acts as the Product Owner), 
-    - it: One or more DevOps experts,
-    - it: The programmer from the project (optionally).
+        - it: TL of the project team (who acts as the Product Owner), 
+        - it: One or more DevOps experts,
+        - it: The programmer from the project (optionally).
 
 
 people:
