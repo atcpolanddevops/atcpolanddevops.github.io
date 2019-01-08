@@ -2,7 +2,7 @@
 header.masthead {
   text-align: center;
   color: black;
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/bg2.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -14,14 +14,14 @@ header.masthead {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
-      margin-bottom: 25px;
+      // margin-bottom: 25px;
       @include serif-font;
     }
     .intro-heading {
-      font-size: 30px;
+      font-size: 28px;
       font-weight: 700;
       line-height: 50px;
-      margin-bottom: 25px;
+      text-align: left;
       @include heading-font;
     }
   }
@@ -30,19 +30,19 @@ header.masthead {
   header.masthead {
     .intro-text {
       padding-top: 300px;
-      padding-bottom: 200px;
+      padding-bottom: 300px;
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
-        line-height: 40px;
+        // line-height: 40px;
         margin-bottom: 25px;
         @include serif-font;
       }
       .intro-heading {
-        font-size: 50px;
+        font-size: 48px;
         font-weight: 700;
-        line-height: 75px;
-        margin-bottom: 50px;
+        // line-height: 75px;
+        // margin-bottom: 50px;
         @include heading-font;
       }
     }

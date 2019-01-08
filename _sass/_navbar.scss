@@ -104,3 +104,29 @@
     }
   }
 }
+
+@media(min-width:1440px) {
+  #mainNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 0.7em 0.7em !important;
+          font-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:1540px) {
+  #mainNav {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 0.7em 0.7em !important;
+          font-size: 120%;
+        }
+      }
+    }
+  }
+}
