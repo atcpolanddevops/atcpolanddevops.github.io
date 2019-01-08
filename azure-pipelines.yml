@@ -20,7 +20,7 @@ steps:
   displayName: 'path to gems'
 
 - script: |
-    gem install jekyll bundler
+    sudo gem install jekyll bundler
     bundle install --retry=3 --jobs=4
   displayName: 'install jekyll & bundler'  
 
