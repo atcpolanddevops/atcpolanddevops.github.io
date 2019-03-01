@@ -65,7 +65,6 @@ layout: default
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">{{ site.data.home.cooperation.heading }}</h2>
-            <h3 class="section-subheading text-muted" style="font-style: italic;">{{ site.data.home.cooperation.subheading }}</h3>
           </div>
           </div>
           <div class="row text-center">
@@ -103,8 +102,6 @@ layout: default
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">Credentials</h2>
-            
-            <h3 class="section-subheading text-muted" style="font-style: italic;">    </h3>
           </div>
         </div>
         <br>
@@ -130,7 +127,7 @@ layout: default
             </p>
           </div>
           <div class="col-md-9" style="padding: 0.2rem;">
-            <img style="width: inherit" src="/assets/img/t.png">
+            <img style="width: inherit" class="img-fluid zoom" src="/assets/img/t.png">
           </div>
         </div>
         <br>
@@ -422,7 +419,7 @@ layout: default
               {%- endfor -%}
               {% assign ws = '' %}
               </div>
-              
+
               <br>
             
               <div class="col-lg-12 text-center">
@@ -525,111 +522,101 @@ layout: default
     </section>
 
     <!-- TOTAL DEVOPS -->
-    <section class="totaldevops" id="totaldevops">
-        <!-- <img src="assets/img/td2.png">  -->
-      <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-              {{ site.data.home.total.heading }} 
-                <h2 class="section-heading text-uppercase">TOTAL DEVOPS</h2>
-                <h3 class="section-subheading text-muted" style="font-style: italic;">
-                 
-                </h3>
+    <section class="totaldevops" id="totaldevops" style="padding-top: 0">
+      <img style="padding-bottom: 5rem; width:90%;" src="assets/img/tdd2.png"> 
+      <div class="container">            
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <h2 class="display-4" style="font-size: 1.8rem; text-align: center;">DEFINITION</h2>
+                <p style="text-align: justify; font-size: 1.2rem;">
+                    The purpose of the initiative is to ensure that all ATC Poland project will be using DevOps, except very short or special projects where DevOps implementation wouldn't have business case
+                    Target and profits.  
+                </p>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3">
+                
+                <h3 style="font-size: 1.3rem; text-align: left;">Target and profits</h3>
+                <ul class="list-none">
+                  <li class="list-none-plus">
+                    <p style="font-size: 1rem;">
+                        <i class="{{ site.data.home.plus.icon }}"></i>
+                        Distinguish our center as modern and leading one => more interesting project, additional strength of our center 
+                        </p>
+                  </li>
+                  <li class="list-none-plus">
+                    <p style="font-size: 1rem;">  
+                        <i class="{{ site.data.home.plus.icon }}"></i>
+                        Increased efficiency of our teams => clients & client teams satisfaction, higher profitablity of projects, better value for the client
+                    </p>  
+                  </li>
+                  <li class="list-none-plus">
+                    <p style="font-size: 1rem;">  
+                        <i class="{{ site.data.home.plus.icon }}"></i>
+                        Work in modern way in modern environment => higher satisfaction and motivation of our people
+                    </p>  
+                  </li>
+                  
+                </ul>
               </div>
             </div>
-            
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                    <h3 class="display-4" style="font-size: 1.8rem; text-align: left;">DEFINITION</h3>
-                    <p style="text-align: justify; font-size: 1.2rem;">
-                        The purpose of the initiative is to ensure that all ATC Poland project will be using DevOps, except very short or special projects where DevOps implementation wouldn't have business case
-                        Target and profits.  
+            <div class="col-md-8">
+                <img  src="assets/img/c.png" alt="">
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="display-4" style="font-size: 1.8rem; text-align: left;">Rules</h3>
+              <div class="p-3">
+                <ul class="list-none">
+                  <li class="list-none-plus">
+                    <p style="font-size: 1rem;">
+                      <i class="{{ site.data.home.plus.icon }}"></i>
+                      Before start of the new project TL from project side and DevOps team expert will fill in short questionaire for assesment of the planned project processes with DevOps standards in the same time discussing best DevOps practices  
                     </p>
-                </div>
-                <div class="col-md-4">
-                  <div class="p-3">
-                    
-                    <h3 style="font-size: 1.3rem; text-align: left;">Target and profits</h3>
-                    <ul class="list-none">
-                      <li class="list-none-plus">
-                        <p style="font-size: 1rem;">
-                            <i class="{{ site.data.home.plus.icon }}"></i>
-                            Distinguish our center as modern and leading one => more interesting project, additional strength of our center 
-                           </p>
-                      </li>
-                      <li class="list-none-plus">
-                        <p style="font-size: 1rem;">  
-                            <i class="{{ site.data.home.plus.icon }}"></i>
-                            Increased efficiency of our teams => clients & client teams satisfaction, higher profitablity of projects, better value for the client
-                        </p>  
-                      </li>
-                      <li class="list-none-plus">
-                        <p style="font-size: 1rem;">  
-                            <i class="{{ site.data.home.plus.icon }}"></i>
-                            Work in modern way in modern environment => higher satisfaction and motivation of our people
-                        </p>  
-                      </li>
-                     
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-md-8">
-                   <img  src="assets/img/c.png" alt="">
-                </div>
-              </div>
-              <br>
-              <br>
-              <br>
-              <div class="row">
-                <div class="col-md-12">
-                  <h3 class="display-4" style="font-size: 1.8rem; text-align: left;">Rules</h3>
-                  <div class="p-3">
-                    <ul class="list-none">
-                      <li class="list-none-plus">
-                        <p style="font-size: 1rem;">
-                          <i class="{{ site.data.home.plus.icon }}"></i>
-                          Before start of the new project TL from project side and DevOps team expert will fill in short questionaire for assesment of the planned project processes with DevOps standards in the same time discussing best DevOps practices  
-                        </p>
-                      </li>
-                      <li class="list-none-plus">
-                        <p style="font-size: 1rem;">
-                          <i class="{{ site.data.home.plus.icon }}"></i>
-                          Basing on that discussion TL with DevOps expert will agree on planned scope of DevOps implementation for given project and agree on level of engagement of DevOps team for given project in accordance with rules described on this page
-                        </p>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12" style="  display:block;"> 
-                  <img style="  display:block;  margin-left: auto;  margin-right: auto;" src="assets/img/s_a.png" alt="">
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                    <div class="p-3">
-                        <ul class="list-none">
-                          <li class="list-none-plus">
-                            <p style="font-size: 1rem;">  
-                              <i class="{{ site.data.home.plus.icon }}"></i>
-                              For new project we will inform Client Teams about initiative as soon as possible. On latext during DCSO definition.  
-                            </p>  
-                          </li>
-                          <li class="list-none-plus">
-                            <p style="font-size: 1rem;">  
-                              <i class="{{ site.data.home.plus.icon }}"></i>
-                              For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
-                            </p>  
-                          </li>
-                        </ul>
-                    </div>
-                </div>
-               
+                  </li>
+                  <li class="list-none-plus">
+                    <p style="font-size: 1rem;">
+                      <i class="{{ site.data.home.plus.icon }}"></i>
+                      Basing on that discussion TL with DevOps expert will agree on planned scope of DevOps implementation for given project and agree on level of engagement of DevOps team for given project in accordance with rules described on this page
+                    </p>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="col-md-12" style="  display:block;"> 
+              <img style="  display:block;  margin-left: auto;  margin-right: auto;" src="assets/img/s_a.png" alt="">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="p-3">
+                    <ul class="list-none">
+                      <li class="list-none-plus">
+                        <p style="font-size: 1rem;">  
+                          <i class="{{ site.data.home.plus.icon }}"></i>
+                          For new project we will inform Client Teams about initiative as soon as possible. On latext during DCSO definition.  
+                        </p>  
+                      </li>
+                      <li class="list-none-plus">
+                        <p style="font-size: 1rem;">  
+                          <i class="{{ site.data.home.plus.icon }}"></i>
+                          For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
+                        </p>  
+                      </li>
+                    </ul>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
     </section>
     
     <!-- Brands  -->
