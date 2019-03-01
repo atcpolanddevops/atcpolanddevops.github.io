@@ -1,5 +1,10 @@
 # Strona DevOps ATC Poland  
 
+# UPDATE POTRZEBNY!!!!
+- poprawa kodu (zamiana w html aby nie wpisywać i poprawiać home.html za kazdym razem, ale informacje  trzymać w _data/home.yml)
+- podzielenie fragmentów (sekcji) do osobnych html-i (bo bajzel)
+
+
 ## Foldery:
 
 ```
