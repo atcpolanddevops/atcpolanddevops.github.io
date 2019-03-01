@@ -4,7 +4,9 @@ menu-string: Menu
 
 nav:
   - title: Cooperation
-    url: '#cooperation'
+    url: '#cooperation1'
+  - title: Total Devops
+    url: '#totaldevops'
   - title: Example Solutions
     url: '#portfolio'
   - title: Repositories & ALM
