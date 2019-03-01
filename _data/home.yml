@@ -74,8 +74,14 @@ repo:
   almheading: ALM  
 
 capacity:
-  heading: CAPACITY SERVICE
+  heading: Types of Cooperation
   subheading: The principles for good cooperation
+  min_heading: Managed delivery
+  min_heading2: Capacity services
+  managed: 
+    - item:	Starts with definition of scope, estimation, setting start-end dates and WBS
+    - item: These can consists of bigger tasks, e.g. implementation of Continuous Integration or smaller ones, e.g. analysis and recommendation
+    - item: Requests should be sent to Atc_Poland_DevOps@accenture.com  mailbox, or in future via ticketing tool
   rules:
     - item: DevOps expert performs tasks from DevOps field which TL instructed, in accordance with general principles of project cooperation in ATC
     - item: Our cooperation should start with discussion of project situation to set a goal and plan how to manage it. We can discuss it broadly, involving other experienced DevOps experts

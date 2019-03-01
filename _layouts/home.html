@@ -408,24 +408,46 @@ layout: default
           </div>
 
           <div class="container">
-            {%- for rule in site.data.home.capacity.rules -%}
-            {% assign ws = '' %}              
-            <ul class="list-none">
-              <li class="list-none-li"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
-            </ul>
-            {%- endfor -%}
-            {% assign ws = '' %}
+            <div class="row" style="padding: 2%">
+              <div class="col-lg-12 text-center">
+                <h4 class="section-heading text-uppercase" style="padding: 0.7rem;">{{ site.data.home.capacity.min_heading }}</h4>
+              </div>
 
-            {%- for i in site.data.home.capacity.agile -%}
-            {% assign ws = '' %}  
-            <!-- LIST ITEMS FOR LAST  RULE! CHANGE IN ORDER OF RULE WILL CHANGE SENSE OF MEANING-->
-            <ul class="list-none">
-              <li class="list-none-li" style="padding-left: 1.7em; font-size: 98%;"><i class="fa fa-caret-right" aria-hidden="true"></i>   {{ i.it }}</li>
-            </ul>
-            {%- endfor -%}
-            {% assign ws = '' %}
+              <div>
+              {%- for rule in site.data.home.capacity.managed -%}
+              {% assign ws = '' %}              
+              <ul class="list-none"  >
+                <li class="list-none-li"  style="font-size: 1.2rem;"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
+              </ul>
+              {%- endfor -%}
+              {% assign ws = '' %}
+              </div>
+              
+              <br>
+            
+              <div class="col-lg-12 text-center">
+                <h4 class="section-heading text-uppercase" style="padding: 0.7rem;">{{ site.data.home.capacity.min_heading2 }}</h4>
+              </div>
+              <div>
+                {%- for rule in site.data.home.capacity.rules -%}
+                {% assign ws = '' %}              
+                <ul class="list-none"  >
+                  <li class="list-none-li" style="font-size: 1.2rem;"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
+                </ul>
+                {%- endfor -%}
+                {% assign ws = '' %}
+
+                {%- for i in site.data.home.capacity.agile -%}
+                {% assign ws = '' %}  
+                <!-- LIST ITEMS FOR LAST  RULE! CHANGE IN ORDER OF RULE WILL CHANGE SENSE OF MEANING-->
+                <ul class="list-none">
+                  <li class="list-none-li" style="padding-left: 1.7em; font-size: 1.1rem;"><i class="fa fa-caret-right" aria-hidden="true"></i>   {{ i.it }}</li>
+                </ul>
+                {%- endfor -%}
+                {% assign ws = '' %}
+              </div>
+            </div>
           </div>
-
         </div>
     </section>l
 
