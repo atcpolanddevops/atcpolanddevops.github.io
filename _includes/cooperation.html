@@ -1,0 +1,48 @@
+<section id="cooperation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-center">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#cooperation1">{{ site.data.home.cooperation.cooperation1btnstring}}</a>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#totaldevops" >{{ site.data.home.cooperation.totaldevopsbtnstring }}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cooperation1">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.home.cooperation.heading }}</h2>
+        </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-12 text-center">
+            <h5 class="section-heading text-uppercase " style="font-weight: 60%;">{{ site.data.home.cooperation.section1heading }}</h5>
+            
+            <img id="img-wyjasnienie" class="img-fluid img-margin " src="{{ assets_path }}{{ site.data.home.cooperation.img }}" alt="">
+          </div>
+        </div>
+
+      <div class="row text-center">
+         <div class="col-lg-12 text-center">
+            <h5 class="section-heading text-uppercase img-margin" style="font-weight: 60%;">{{ site.data.home.cooperation.section2heading }}</h5>      
+        </div>
+        {%- for service in site.data.home.cooperation.service -%}
+        {% assign ws = '' %}
+        <div class="col-md-4">
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+            <i class="{{ service.icon }} fa-stack-1x fa-inverse"></i>
+          </span>
+          <h4 class="service-heading">{{ service.heading }}</h4>
+          <p class="text-muted">{{ service.text }}</p>
+        </div>
+        {%- endfor -%}
+      {% assign ws = '' %}
+      </div>
+    </div>
+  </section>

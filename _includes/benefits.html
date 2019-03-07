@@ -1,0 +1,94 @@
+<section class="plus" id="plus">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.home.plus.heading }}</h2>
+          <h3 class="section-subheading text-muted" style="font-style: italic;">{{ site.data.home.plus.subheading }}</h3>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="row">
+          {%- for item in site.data.home.plus.content -%}
+          {% assign ws = '' %}
+          <div class="col-md-6">
+            <div class="p-3">
+              <h3 class="display-4" style="font-size: 2.5rem; text-align: center;">{{ item.name }}</h3>
+              <p style="text-align:  center;">
+                {{ item.text }}
+              </p>
+              <ul class="list-none">
+                {%- for it in item.advantages -%}
+                {% assign ws = '' %}
+                <li class="list-none-plus">
+                  <p style="text-align: justify;">
+                    <i class="{{ site.data.home.plus.icon }}" style="padding-right: 0.1em;"></i>
+                    {{ it.check }}
+                  </p>
+                </li>
+                {%- endfor -%}
+                {% assign ws = '' %}
+              </ul>
+            </div>
+          </div>
+          {%- endfor -%}
+          {% assign ws = '' %}
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Capacity -->
+  <section class="bg-light" id="capacity">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.home.capacity.heading }}</h2>
+            <h3 class="section-subheading text-muted" style="font-style: italic;">{{ site.data.home.capacity.subheading }}</h3>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row" style="padding: 2%">
+            <div class="col-lg-12 text-center">
+              <h4 class="section-heading text-uppercase" style="padding: 0.7rem;">{{ site.data.home.capacity.min_heading }}</h4>
+            </div>
+
+            <div>
+            {%- for rule in site.data.home.capacity.managed -%}
+            {% assign ws = '' %}              
+            <ul class="list-none"  >
+              <li class="list-none-li"  style="font-size: 1.2rem;"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
+            </ul>
+            {%- endfor -%}
+            {% assign ws = '' %}
+            </div>
+
+            <br>
+          
+            <div class="col-lg-12 text-center">
+              <h4 class="section-heading text-uppercase" style="padding: 0.7rem;">{{ site.data.home.capacity.min_heading2 }}</h4>
+            </div>
+            <div>
+              {%- for rule in site.data.home.capacity.rules -%}
+              {% assign ws = '' %}              
+              <ul class="list-none"  >
+                <li class="list-none-li" style="font-size: 1.2rem;"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
+              </ul>
+              {%- endfor -%}
+              {% assign ws = '' %}
+
+              {%- for i in site.data.home.capacity.agile -%}
+              {% assign ws = '' %}  
+              <!-- LIST ITEMS FOR LAST  RULE! CHANGE IN ORDER OF RULE WILL CHANGE SENSE OF MEANING-->
+              <ul class="list-none">
+                <li class="list-none-li" style="padding-left: 1.7em; font-size: 1.1rem;"><i class="fa fa-caret-right" aria-hidden="true"></i>   {{ i.it }}</li>
+              </ul>
+              {%- endfor -%}
+              {% assign ws = '' %}
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>l

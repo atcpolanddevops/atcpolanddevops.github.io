@@ -1,0 +1,71 @@
+<section id="people">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">{{ site.data.home.people.heading }}</h2>
+          <h3 class="section-subheading text-muted" style="font-style: italic;">{{ site.data.home.people.subheading }}</h3>
+        </div>
+      </div>
+
+<!-- BUTTONS -->
+      <div class="row">
+        <div class="col-md-6 people">
+          <h3 class="people-header"> ŁÓDŹ </h3>
+          <div class="row">
+            {%- for project in site.posts -%}
+            {% assign ws = '' %}
+              {% if project.curriculum == true %}
+                {% if project.lodz == true %}  
+                  {% if project.cv-info == true %}
+                  <div class="col-sm-6 portfolio-item">
+                    <a href="#portfolioModal{{ project.modal-id }}" class="portfolio-link btn btn-success btn-xl" role="button" aria-pressed="true"  data-toggle="modal" style="color: white;">
+                      
+                      {{project.title}}
+                    </a>
+                  </div>
+                  {% else %}
+                  <div class="col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link btn btn-success btn-xl" role="button" aria-pressed="true"  data-toggle="modal" style="color: white;">
+                      
+                      {{project.title}}
+                    </a>
+                  </div>
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {% assign ws = '' %}
+          </div> 
+        </div>
+
+        <div class="col-md-6 people">
+          <h3 class="people-header"> KATOWICE </h3>
+          <div class="row">
+            {%- for project in site.posts -%}
+            {% assign ws = '' %}
+              {% if project.curriculum == true %}
+                {% if project.lodz == false %}  
+                  {% if project.cv-info == true %}
+                    <div class="col-sm-6 portfolio-item">
+                    <a href="#portfolioModal{{ project.modal-id }}" class="portfolio-link  btn btn-success btn-xl" role="button" aria-pressed="true"  data-toggle="modal" style="color: white;">
+                      
+                      {{project.title}}
+                    </a>
+                  </div>
+                  {% else %}
+                  <div class="col-sm-6 portfolio-item">
+                    <a href="#" class="portfolio-link btn btn-success btn-xl" role="button" aria-pressed="true"  data-toggle="modal" style="color: white;">
+                      {{project.title}}
+                    </a>
+                  </div>
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
+            {% assign ws = '' %}
+          </div>
+        </div> 
+
+    </div>
+  </div>
+</section>
