@@ -4,37 +4,26 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-              <h2 class="display-4" style="font-size: 1.8rem; text-align: center;">DEFINITION</h2>
+              <h2 class="display-4" style="font-size: 1.8rem; text-align: center;">{{site.data.home.totaldevops.header}}</h2>
               <p style="text-align: justify; font-size: 1.2rem;">
-                  The purpose of the initiative is to ensure that all ATC Poland project will be using DevOps, except very short or special projects where DevOps implementation wouldn't have business case
-                  Target and profits.  
+                  {{site.data.home.totaldevops.subheader}} 
               </p>
           </div>
           <div class="col-md-4">
-            <div class="p-3">
-              
-              <h3 style="font-size: 1.3rem; text-align: left;">Target and profits</h3>
+            <div class="p-3">              
+              <h3 style="font-size: 1.3rem; text-align: left;">{{site.data.home.totaldevops.target.name}}</h3>
+              {%- for item in site.data.home.totaldevops.target.items}
+              {%- assign ws = '' -%}
               <ul class="list-none">
                 <li class="list-none-plus">
                   <p style="font-size: 1rem;">
                       <i class="{{ site.data.home.plus.icon }}"></i>
-                      Distinguish our center as modern and leading one => more interesting project, additional strength of our center 
+                        {{item.item}}
                       </p>
                 </li>
-                <li class="list-none-plus">
-                  <p style="font-size: 1rem;">  
-                      <i class="{{ site.data.home.plus.icon }}"></i>
-                      Increased efficiency of our teams => clients & client teams satisfaction, higher profitablity of projects, better value for the client
-                  </p>  
-                </li>
-                <li class="list-none-plus">
-                  <p style="font-size: 1rem;">  
-                      <i class="{{ site.data.home.plus.icon }}"></i>
-                      Work in modern way in modern environment => higher satisfaction and motivation of our people
-                  </p>  
-                </li>
-                
               </ul>
+              {%- endfor -%}
+              {%- assign ws = '' -%}
             </div>
           </div>
           <div class="col-md-8">
@@ -46,22 +35,18 @@
         <br>
         <div class="row">
           <div class="col-md-12">
-            <h3 class="display-4" style="font-size: 1.8rem; text-align: left;">Rules</h3>
+            <h3 class="display-4" style="font-size: 1.8rem; text-align: left;">{{ site.data.home.totaldevops.rules.name }}</h3>
             <div class="p-3">
+              {%- for it in site.data.home.totaldevops.rules.rules1 -%}        
               <ul class="list-none">
                 <li class="list-none-plus">
                   <p style="font-size: 1rem;">
                     <i class="{{ site.data.home.plus.icon }}"></i>
-                    Before start of the new project TL from project side and DevOps team expert will fill in short questionaire for assesment of the planned project processes with DevOps standards in the same time discussing best DevOps practices  
-                  </p>
-                </li>
-                <li class="list-none-plus">
-                  <p style="font-size: 1rem;">
-                    <i class="{{ site.data.home.plus.icon }}"></i>
-                    Basing on that discussion TL with DevOps expert will agree on planned scope of DevOps implementation for given project and agree on level of engagement of DevOps team for given project in accordance with rules described on this page
+                    {{ it.item }}
                   </p>
                 </li>
               </ul>
+              {%- endfor -%}
             </div>
           </div>
         </div>
@@ -73,20 +58,16 @@
         <div class="row">
           <div class="col-md-12">
               <div class="p-3">
+                  {%- for it in site.data.home.totaldevops.rules.rules2 -%} 
                   <ul class="list-none">
                     <li class="list-none-plus">
                       <p style="font-size: 1rem;">  
                         <i class="{{ site.data.home.plus.icon }}"></i>
-                        For new project we will inform Client Teams about initiative as soon as possible. On latext during DCSO definition.  
-                      </p>  
-                    </li>
-                    <li class="list-none-plus">
-                      <p style="font-size: 1rem;">  
-                        <i class="{{ site.data.home.plus.icon }}"></i>
-                        For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
+                        {{ it.item }}
                       </p>  
                     </li>
                   </ul>
+                  {%- endfor -%}
               </div>
           </div>
           

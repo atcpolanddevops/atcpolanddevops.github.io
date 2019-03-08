@@ -39,7 +39,16 @@
             <i class="{{ service.icon }} fa-stack-1x fa-inverse"></i>
           </span>
           <h4 class="service-heading">{{ service.heading }}</h4>
-          <p class="text-muted">{{ service.text }}</p>
+          <div>
+            {%- for it in service.items -%}
+            <ul class="list-none">
+              <li class="list-none-pluse">
+                <p class="text-muted">{{it.item}}</p>
+              </li>
+            </ul>
+            {%- endfor -%}
+            <!--<p class="text-muted">{{ service.text }}</p>-->
+          </div>
         </div>
         {%- endfor -%}
       {% assign ws = '' %}

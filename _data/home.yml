@@ -16,15 +16,30 @@ cooperation:
   service:
     - icon: fa fa-money
       heading: SAVE MONEY
-      text: Developers do not waste time on builds, tests and releases (they are automated!)
+      #text: Developers do not waste time on builds, tests and releases (they are automated!)
       #Develeloper nie traci czasu na manualną budowę, testy jak i release aplikacji 
+      items:
+        - item: Developers do not waste time on builds, tests and releases (they are automated!)
+        - item: Early detection and faster correction of defects
+        - item: More stable operating environment (better deploys)
+        - item: Faster delivery (because it's continuous!)
     - icon: fa fa-male
       heading: VALUE FOR MANAGEMENT
-      text: Easier insight into developers work (using statistics and custom dashboards)
+      #text: Easier insight into developers work (using statistics and custom dashboards)
       #Prostszy wgląd w pracę zespołu poprzez statystyki i dostosowane dashboardy.
+      items:
+        - item: Easier insight into developers work (using statistics and custom dashboards)
+        - item: Improve collaboration between teams 
+        - item: Increase productivity
+        - item: Faster build and deploy log check
     - icon: fa fa-briefcase
       heading: VALUE FOR BUSINESS
-      text: Faster translations of the ideas into functioning product.
+      #text: Faster translations of the ideas into functioning product.
+      items:
+        - item: Faster translations of the ideas into functioning product.
+        - item: 
+        - item: 
+        - item: 
       # Krótszy czas od pomysłu do wdrożenia go na produkcję.
       # ----------------------------------------------------
       # Droga od pomysłu na działalność 
@@ -139,20 +154,18 @@ totaldevops:
                   Target and profits.
   target:
     name: Target and profits
-      items: 
-        - item: Distinguish our center as modern and leading one => more interesting project, additional strength of our center 
-        - item: Increased efficiency of our teams => clients & client teams satisfaction, higher profitablity of projects, better value for the client
-        - item: Work in modern way in modern environment => higher satisfaction and motivation of our people
-  rules1:
+    items: 
+      - item: Distinguish our center as modern and leading one => more interesting project, additional strength of our center 
+      - item: Increased efficiency of our teams => clients & client teams satisfaction, higher profitablity of projects, better value for the client
+      - item: Work in modern way in modern environment => higher satisfaction and motivation of our people
+  rules:
     name: Rules
-      items: 
-        - item: Before start of the new project TL from project side and DevOps team expert will fill in short questionaire for assesment of the planned project processes with DevOps standards in the same time discussing best DevOps practices
-        - item: Basing on that discussion TL with DevOps expert will agree on planned scope of DevOps implementation for given project and agree on level of engagement of DevOps team for given project in accordance with rules described on this page
-  rules2:
-    name: Rules
-      items: 
-        - item: For new project we will inform Client Teams about initiative as soon as possible. On latext during DCSO definition.
-        - item: For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
+    rules1:
+      - item: Before start of the new project TL from project side and DevOps team expert will fill in short questionaire for assesment of the planned project processes with DevOps standards in the same time discussing best DevOps practices
+      - item: Basing on that discussion TL with DevOps expert will agree on planned scope of DevOps implementation for given project and agree on level of engagement of DevOps team for given project in accordance with rules described on this page
+    rules2: 
+      - item: For new project we will inform Client Teams about initiative as soon as possible. On latext during DCSO definition.
+      - item: For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
 
   
 

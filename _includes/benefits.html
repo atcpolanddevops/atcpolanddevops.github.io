@@ -56,13 +56,13 @@
             </div>
 
             <div>
-            {%- for rule in site.data.home.capacity.managed -%}
-            {% assign ws = '' %}              
-            <ul class="list-none"  >
-              <li class="list-none-li"  style="font-size: 1.2rem;"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
-            </ul>
-            {%- endfor -%}
-            {% assign ws = '' %}
+              {%- for rule in site.data.home.capacity.managed -%}
+              {% assign ws = '' %}              
+              <ul class="list-none"  >
+                <li class="list-none-li"  style="font-size: 1.2rem;"><i class="fa fa-arrow-right arrow"></i>{{ rule.item }}</li>
+              </ul>
+              {%- endfor -%}
+              {% assign ws = '' %}
             </div>
 
             <br>

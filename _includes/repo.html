@@ -1,49 +1,107 @@
-<section  id="repo">
-    <div class="container">
-     <div class="row">
-       <div class="col-lg-12 text-center">
-         <h2 class="section-heading text-uppercase">{{ site.data.home.repo.heading }}</h2>
-         <h3 class="section-subheading text-muted" style="font-style: italic;">{{ site.data.home.repo.subheading }}</h3>
-       </div>
-     </div>
+<section id="repo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.home.repo.heading }}</h2>
+        <h3 class="section-subheading text-muted" style="font-style: italic;">{{ site.data.home.repo.subheading }}</h3>
+      </div>
+    </div>
 
-     <div class="col-lg-12 text-center">
-       <h3 class="section-heading text-uppercase" style="padding: 2em; font-weight: 60%;" style="font-style: italic;">{{ site.data.home.repo.repoheading }}</h3>
-     </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-4 text-center">
+        <a href="#repoModal" class="portfolio-link btn btn-success btn-xl" role="button" aria-pressed="true"
+          data-toggle="modal" style="color:white">Repository</a>
+      </div>
+      <div class="col-md-6 col-xs-4 text-center">
+        <a href="#almModal" class="portfolio-link btn btn-success btn-xl" role="button" aria-pressed="true"
+          data-toggle="modal" style="color:white">ALM</a>
+      </div>
 
-     <div class="row align-items-center">
-       <div class="col-lg-9 order-lg-2">
-         <div class="p-5">
-           <img class="img-fluid zoom" src="assets/img/about/repo.jpg" alt="">
-         </div>
-       </div>
-       <div class="col-lg-3 order-lg-1">
-           <ul class = "list-none">
-             <li class="list-none-li"><a href="{{site.data.default.reponame.phab}}">PHABRICATOR</a></li>
-             <li class="list-none-li"><a href="{{site.data.default.reponame.bitbucket}}">BITBUCKET</a></li>
-             <li class="list-none-li"><a href="{{site.data.default.reponame.gitlab}}">GITLAB</a></li>
-             <li class="list-none-li"><a href="{{site.data.default.reponame.github}}">GITHUB</a></li>
-             <li class="list-none-li"><a href="{{site.data.default.reponame.vsts}}">AZURE DEVOPS</a></li>
-           </ul>
-       </div>
-     </div>
+    </div>
 
-     <div class="col-lg-12 text-center">
-       <h3 class="section-heading text-uppercase" style="padding: 2em; font-weight: 60%;">{{ site.data.home.repo.almheading }}</h3>
-     </div>
+    <div id="repoModal" class="portfolio-modal modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <h1>Repository</h1>
+          <img class="img-fluid d-block mx-auto" src="assets/img/about/repo.jpg" alt="">
+          <div class="container">
+            <div class="row">
+              <a href="{{site.data.default.reponame.phab}}" class="btn btn-success col-lg-2">PHABRICATOR</a>
+              <a href="{{site.data.default.reponame.bitbucket}}" class="btn btn-success col-lg-2">BITBUCKET</a>
+              <a href="{{site.data.default.reponame.gitlab}}" class="btn btn-success col-lg-2">GITLAB</a>
+              <a href="{{site.data.default.reponame.gitlab}}" class="btn btn-success col-lg-2">GITLAB</a>
+              <a href="{{site.data.default.reponame.github}}" class="btn btn-success col-lg-2">GITHUB</a>
+              <a href="{{site.data.default.reponame.vsts}}" class="btn btn-success col-lg-2">AZURE DEVOPS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-     <div class="row align-items-center">
-       <div class="col-lg-9">
-         <div class="p-5">
-           <img class="img-fluid zoom" src="assets/img/about/alm.jpg" alt="">
-         </div>
-       </div>
-       <div class="col-lg-3">
-           <ul class="list-none">
-             <li class="list-none-li"><a href="{{site.data.default.reponame.phab}}">PHABRICATOR</a></li>
-             <li class="list-none-li"><a href="{{site.data.default.reponame.jiraatl}}">JIRA ATLASSIAN</a></li>
-           </ul>
-       </div>
-     </div>
-     </div>
- </section>
+    <div id="almModal" class="portfolio-modal modal fade" role="dialog" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+              <div class="lr">
+                <div class="rl"></div>
+              </div>
+            </div>
+            <h1>Repository</h1>
+            <img class="img-fluid d-block mx-auto" src="assets/img/about/alm.jpg" alt="">
+            <div class="container">
+              <div class="row">
+                <a href="{{site.data.default.reponame.phab}}" class="btn btn-success col-lg-6">PHABRICATOR</a>
+                <a href="{{site.data.default.reponame.jiraatl}}" class="btn btn-success col-lg-6">JIRA ATLASSIAN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-lg-12 text-center">
+      <h3 class="section-heading text-uppercase" style="padding: 2em; font-weight: 60%;" style="font-style: italic;">
+        {{ site.data.home.repo.repoheading }}</h3>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-9 order-lg-2">
+        <div class="p-5">
+          <img class="img-fluid zoom" src="assets/img/about/repo.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3 order-lg-1">
+        <ul class="list-none">
+          <li class="list-none-li"><a href="{{site.data.default.reponame.phab}}">PHABRICATOR</a></li>
+          <li class="list-none-li"><a href="{{site.data.default.reponame.bitbucket}}">BITBUCKET</a></li>
+          <li class="list-none-li"><a href="{{site.data.default.reponame.gitlab}}">GITLAB</a></li>
+          <li class="list-none-li"><a href="{{site.data.default.reponame.github}}">GITHUB</a></li>
+          <li class="list-none-li"><a href="{{site.data.default.reponame.vsts}}">AZURE DEVOPS</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-lg-12 text-center">
+      <h3 class="section-heading text-uppercase" style="padding: 2em; font-weight: 60%;">
+        {{ site.data.home.repo.almheading }}</h3>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <div class="p-5">
+          <img class="img-fluid zoom" src="assets/img/about/alm.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <ul class="list-none">
+          <li class="list-none-li"><a href="{{site.data.default.reponame.phab}}">PHABRICATOR</a></li>
+          <li class="list-none-li"><a href="{{site.data.default.reponame.jiraatl}}">JIRA ATLASSIAN</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
