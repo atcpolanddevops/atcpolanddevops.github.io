@@ -36,10 +36,9 @@ cooperation:
       heading: VALUE FOR BUSINESS
       #text: Faster translations of the ideas into functioning product.
       items:
-        - item: Faster translations of the ideas into functioning product.
-        - item: 
-        - item: 
-        - item: 
+        - item: Faster translations of the ideas into functioning product and faster ROI
+        - item: Enable experimenting by quick and easy putting and removing features on production
+        - item: Stable go-lives without risk
       # Krótszy czas od pomysłu do wdrożenia go na produkcję.
       # ----------------------------------------------------
       # Droga od pomysłu na działalność 
