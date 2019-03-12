@@ -8,17 +8,53 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6 col-xs-4 text-center">
-        <a href="#repoModal" class="portfolio-link btn btn-success btn-xl" role="button" aria-pressed="true"
-          data-toggle="modal" style="color:white">Repository</a>
+      {%- for project in site.posts -%}
+      {%- assign ws = '' -%}
+      {% if project.repos == true %}
+      <div class="col-md-6 col-sm-6 text-center portfolio-item">
+        <a href="#portfolioModal{{ project.modal-id }}" class="portfolio-link btn btn-default btn-xl" role="button" aria-pressed="true" data-toggle="modal" style="color:white;">
+          <img class="img-fluid" src="{{ assets_path }}{{ project.thumbnail }}">
+          <p style="color: black;">{{project.title}}</p>          
+        </a>
       </div>
-      <div class="col-md-6 col-xs-4 text-center">
-        <a href="#almModal" class="portfolio-link btn btn-success btn-xl" role="button" aria-pressed="true"
-          data-toggle="modal" style="color:white">ALM</a>
-      </div>
-
+      {% endif %}
+      {%- endfor -%}
+      {%- assign ws = '' -%}
     </div>
 
+    <!--
+    <div class="row">
+      <div class="col-md-6 col-sm-6 portfolio-item">
+        <a href="#repoModal" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-eye fa-3x"></i>
+            </div>
+          </div>
+          <img class="img-fluid" src="assets/img/about/repo-thumb.jpg" alt="">
+          <div class="portfolio-caption">
+            <h4>REPOSITORY</h4>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-sm-6 portfolio-item">
+        <a href="#almModal" class="portfolio-link" data-toggle="modal">
+          <div class="portfolio-hover">
+            <div class="portfolio-hover-content">
+              <i class="fa fa-eye fa-3x"> == $0
+                ::before
+              </i>
+            </div>
+          </div>
+          <img class="img-fluid" src="assets/img/about/alm-thumb.jpg" alt="">
+          <div class="portfolio-caption">
+            <h4>ALM</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+    -->
+    <!--
     <div id="repoModal" class="portfolio-modal modal fade" role="dialog" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -28,7 +64,7 @@
             </div>
           </div>
           <h1>Repository</h1>
-          <!--<img class="img-fluid d-block mx-auto" src="assets/img/about/repo.jpg" alt="">-->
+          <!-<img class="img-fluid d-block mx-auto" src="assets/img/about/repo.jpg" alt="">--
           <h3>HOSTED</h3>
           <img class="img-fluid d-block mx-auto" src="assets/img/about/repo-hosted-full.jpg" alt="">
           <h3>CLOUD</h3>
@@ -47,30 +83,31 @@
         </div>
       </div>
     </div>
-
+-->
+    <!--
     <div id="almModal" class="portfolio-modal modal fade" role="dialog" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-              <div class="lr">
-                <div class="rl"></div>
-              </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
             </div>
-            <h1>Repository</h1>
-            <!--<img class="img-fluid d-block mx-auto" src="assets/img/about/alm.jpg" alt="">-->
-            <h3>HOSTED</h3>
-            <img class="img-fluid d-block mx-auto" src="assets/img/about/alm-hosted-full.jpg" alt="">
-            <h3>CLOUD</h3>
-            <img class="img-fluid d-block mx-auto" src="assets/img/about/alm-cloud-full.jpg" alt="">
-            <div class="container">
-              <div class="row">
-                <a href="{{site.data.default.reponame.phab}}" class="btn btn-success col-lg-6">PHABRICATOR</a>
-                <a href="{{site.data.default.reponame.jiraatl}}" class="btn btn-success col-lg-6">JIRA ATLASSIAN</a>
-              </div>
+          </div>
+          <h1>Repository</h1>
+          <!-<img class="img-fluid d-block mx-auto" src="assets/img/about/alm.jpg" alt="">--
+          <h3>HOSTED</h3>
+          <img class="img-fluid d-block mx-auto" src="assets/img/about/alm-hosted-full.jpg" alt="">
+          <h3>CLOUD</h3>
+          <img class="img-fluid d-block mx-auto" src="assets/img/about/alm-cloud-full.jpg" alt="">
+          <div class="container">
+            <div class="row">
+              <a href="{{site.data.default.reponame.phab}}" class="btn btn-success col-lg-6">PHABRICATOR</a>
+              <a href="{{site.data.default.reponame.jiraatl}}" class="btn btn-success col-lg-6">JIRA ATLASSIAN</a>
             </div>
           </div>
         </div>
       </div>
-
+    </div>
+  -->
   </div>
 </section>
