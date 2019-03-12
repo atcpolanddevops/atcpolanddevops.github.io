@@ -137,14 +137,15 @@ capacity:
     - item: These can consists of bigger tasks, e.g. implementation of Continuous Integration or smaller ones, e.g. analysis and recommendation
     - item: Requests should be sent to Atc_Poland_DevOps@accenture.com  mailbox, or in future via ticketing tool
   rules:
-    - item: DevOps expert performs tasks from DevOps field which TL instructed, in accordance with general principles of project cooperation in ATC
+    #- item: DevOps expert performs tasks from DevOps field which TL instructed, in accordance with general principles of project cooperation in ATC
+    - item: In this cooperation type DevOps expert is assigned to the project and performs DevOps area tasks under supervision of projects TL, in accordance with general principles of project cooperation in ATC
     - item: Our cooperation should start with discussion of project situation to set a goal and plan how to manage it. We can discuss it broadly, involving other experienced DevOps experts
-    - item: We assume the ability to exchange tasks within DevOps team members to ensure the right quality of the solution provided by the knowledge of all experts (if someone has more experience in the field of current task, it is recommended to give him this task)
+    - item: We assume the ability to exchange tasks within DevOps team members to ensure the right quality of the solution provided by the knowledge of all experts (if someone has more experience in the field of current task, we will internally switch resources for better results)
     - item: In case of direct contact needs, a DevOps expert can work in the project team location up to 50% of the time
-    - item: 'An Agile / Scrum way of working is re commended, where the team that delivers the DevOps solutions consists of agile:'
+    - item: 'An Agile / Scrum way of working is recommended. The agile team that delivers the DevOps solutions consists of:'
   agile:
     - it: TL of the project team (who acts as the Product Owner), 
-    - it: One or more DevOps experts,
+    - it: One or more DevOps experts (who act as team members and Scrum Master),
     - it: The programmer from the project (optionally).
 
 totaldevops:
