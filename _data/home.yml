@@ -7,7 +7,9 @@ intro:
 
 cooperation:
   cooperation1btnstring: COOPERATION WITH DEVOPS TEAM
+  cooperation1btnimg: img/coop_btn_pic_end.png
   totaldevopsbtnstring: TOTAL DEVOPS INITIATIVE
+  totaldevopsbtnimg: img/total_devops_btn_pic_end.png
   heading: Cooperation with Devops ATC
   subheading: Short description
   section1heading: Why we recommend DevOps?  
