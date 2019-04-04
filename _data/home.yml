@@ -55,8 +55,8 @@ credentials:
   store: 
     heading: Store systems implementation for big UK telco
     sectiontxtb: Shortlisted for UK Computing Magazine DevOps project of the year 2019
-    sectiontxt1: Full scale DevOps approach using latext technologies, containerization and infrastructure as a code in order to provide best possible working environment for the project and extremely efficient massive deployment solution.
-    sectiontxt2: XStore implementation uses full cloud approach on AWS with all latext Amazon possibilities like Elastic Container Service for automatic sizing and Lambda code for infra triggered actions
+    sectiontxt1: Full scale DevOps approach using latest technologies, containerization and infrastructure as a code in order to provide best possible working environment for the project and extremely efficient massive deployment solution.
+    sectiontxt2: XStore implementation uses full cloud approach on AWS with all latest Amazon possibilities like Elastic Container Service for automatic sizing and Lambda code for infra triggered actions
   retail: 
     heading: Retail system implementation for big polish shoes retailer
     txt: Full scale DevOps processes usage starting from high level design and finished with end-to-end implementation
