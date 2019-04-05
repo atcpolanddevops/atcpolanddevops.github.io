@@ -166,7 +166,7 @@ totaldevops:
       - item: Before start of the new project TL from project side and DevOps team expert will fill in short questionaire for assesment of the planned project processes with DevOps standards in the same time discussing best DevOps practices
       - item: Basing on that discussion TL with DevOps expert will agree on planned scope of DevOps implementation for given project and agree on level of engagement of DevOps team for given project in accordance with rules described on this page
     rules2: 
-      - item: For new project we will inform Client Teams about initiative as soon as possible. On latext during DCSO definition.
+      - item: For new project we will inform Client Teams about initiative as soon as possible. On latest during DCSO definition.
       - item: For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
 
   
