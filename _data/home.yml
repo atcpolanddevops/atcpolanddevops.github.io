@@ -72,8 +72,8 @@ credentials:
         - point: Lowered environments deployment effort by few hours on average
         - point: Automated monitoring
         - point: Automated fix of some kind of errors
-        - point: Easier bugfixing due to full traceability between code and requirements
-        - point: Easier bugfixing thanks to ensured alignment of preprod and prod code and configuration
+        - point: Easier bug fixing due to full traceability between code and requirements
+        - point: Easier bug fixing thanks to ensured alignment of preprod and prod code and configuration
     devgains:
       name: DEV Gains
       text: " "
@@ -163,7 +163,7 @@ totaldevops:
   rules:
     name: Rules
     rules1:
-      - item: Before start of the new project TL from project side and DevOps team expert will fill in short questionaire for assesment of the planned project processes with DevOps standards in the same time discussing best DevOps practices
+      - item: Before start of the new project TL from project side and DevOps team expert will fill in short questionnaire for assessment of the planned project processes with DevOps standards in the same time discussing best DevOps practices
       - item: Basing on that discussion TL with DevOps expert will agree on planned scope of DevOps implementation for given project and agree on level of engagement of DevOps team for given project in accordance with rules described on this page
     rules2: 
       - item: For new project we will inform Client Teams about initiative as soon as possible. On latest during DCSO definition.
