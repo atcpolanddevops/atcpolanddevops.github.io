@@ -168,6 +168,25 @@ totaldevops:
     rules2: 
       - item: For new project we will inform Client Teams about initiative as soon as possible. On latest during DCSO definition.
       - item: For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
+  demo:
+    name: DevOps Flow
+    part1:
+      - item: Application written in Java with Spring framework integrated with Maven running on external server
+        link: img/gifs/1.app.gif      
+      - item: Version Control System provided by BitBucket 
+        link: img/gifs/2.repo.gif
+      - item: Using IntelliJ developers can implement new features and change application's version
+        link: img/gifs/3.new-feature.gif      
+      - item: Changes can be pushed to remote repository where all changes can be viewed any time 
+        link: img/gifs/4.git.gif
+      - item: Jenkins scans repository and triggers the job. It will perform code review with SonnarQube, send artifacts to JFrog Artifactory and deploy changes on production. All of that without human interaction
+        link: img/gifs/5.jenkins.gif      
+      - item: Code analysis can be checked anytime
+        link: img/gifs/6.sonarqube.gif
+      - item: And all versions of artifacts are stored as well
+        link: img/gifs/7.artifactory.gif      
+      - item: If all tests pass, changes are deployed and viewable immediately 
+        link: img/gifs/8.result.gif
 
   
 
