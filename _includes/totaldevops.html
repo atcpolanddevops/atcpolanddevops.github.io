@@ -78,7 +78,7 @@
           </div>
         </div>
 
-      {%- for it in site.data.home.totaldevops.demo.part1 -%} 
+      <!-- {%- for it in site.data.home.totaldevops.demo.part1 -%} 
         <div class="p-3"> 
           <ul class="list-none">
             <li class="list-none-plus">
@@ -97,11 +97,83 @@
         </br>
         </br>
         </br>
+        {%- endfor -%} -->
+
+        <div class="panel-group" style="margin: 0 auto;">
+        {%- for it in site.data.home.totaldevops.demo.part1 -%} 
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title" style="text-align:center;">
+                <button style="margin: 0 auto;" data-toggle="collapse" data-target="#toggle-thats-{{ it.id }}" class="devops-demo btn btn-primary btn-xl text-uppercase js-scroll-trigger" aria-expanded="true" onclick="hideAll();">
+                  {{ it.button }}
+                </button>
+              </h4>
+            </div>
+            <div id="toggle-thats-{{ it.id }}" class="devops-demo-panel panel-collapse collapse in" aria-expanded="true" style="">
+            <div class="panel-body">
+              <div class="language-html highlighter-rouge"> 
+              <div class="p-3"> 
+                <ul class="list-none">
+                  <li class="list-none-plus">
+                    <p style="font-size: 1rem;">
+                      <i class="{{ site.data.home.plus.icon }}"></i>
+                      {{ it.item }}
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="col-md-12" style="  display:block;"> 
+                  <img class="lazyload" style="  display:block;  margin-left: auto;  margin-right: auto;" height="540" src="assets/img/gifs/thumbnail.gif" data-src="assets/{{ it.link }}" alt="">
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          </br>
         {%- endfor -%}
+        </div>
 
       </div>
     </div>
   </section>
+
+  <script type="text/javascript" charset="utf-8">
+    $('.closeall').click(function(){
+      $('.panel-collapse.in')
+          .collapse('hide');
+    });
+    $('.openall').click(function(){
+      $('.panel-collapse:not(".in")')
+        .collapse('show');
+    });
+  </script>
+<!--   
+  <script type="text/javascript" charset="utf-8">
+    var buttons = document.getElementsByClassName("devops-demo");
+    var panels = document.getElementsByClassName("devops-demo-panel");
+    var closemAll = document.getElementById("closemAll");
+    for(var i = 0; i<buttons.length; i++){
+      buttons[i].addEventListener("click", myScript);
+    }
+
+    function myScript(e){
+      // closemAll.click();
+      // $('#collapseall').click(function(){
+      //   $('.panel-collapse.in')
+      //     .collapse('hide');
+      // });
+      // for(var i = 0; i<panels.length; i++){
+      //   if(panels[i].className == "panel-collapse in collapse show"){
+          
+      //     alert("closing" + i);
+      //   }
+      //   // buttons[i].click();
+      // }
+      // if (panel-collapse in collapse show)
+    }
+  </script> -->
 
   <script type="text/javascript" charset="utf-8">
       (function (root, factory) {
