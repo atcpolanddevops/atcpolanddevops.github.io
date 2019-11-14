@@ -169,7 +169,7 @@ totaldevops:
       - item: For new project we will inform Client Teams about initiative as soon as possible. On latest during DCSO definition.
       - item: For existing projects we will apply the same rules, starting from the biggest and long lasting projects.
   demo:
-    name: DevOps Flow
+    name: DevOps Flow Example
     part1:
       - id: id1
         button: Application
