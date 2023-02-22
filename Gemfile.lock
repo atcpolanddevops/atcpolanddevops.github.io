@@ -33,7 +33,7 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
-    jekyll-theme-startbootstrap-agency (0.2.4)
+    jekyll-theme-startbootstrap-agency (~> 0.2.4)
       jekyll (~> 3.8)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
@@ -70,7 +70,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 3.9.1)
   jekyll-feed (~> 0.6)
-  jekyll-theme-startbootstrap-agency
+  jekyll-theme-startbootstrap-agency (~> 0.2.4)
   tzinfo-data
 
 BUNDLED WITH

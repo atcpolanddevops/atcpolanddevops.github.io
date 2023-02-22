@@ -3,7 +3,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.9.1"
 
 # THEME
-gem "jekyll-theme-startbootstrap-agency"
+gem 'jekyll-theme-startbootstrap-agency', '~> 0.2.4'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
