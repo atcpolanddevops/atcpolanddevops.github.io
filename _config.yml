@@ -6,7 +6,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-startbootstrap-agency
+remote_theme: SotiriosVrachas/jekyll-theme-startbootstrap-agency
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
