@@ -202,14 +202,8 @@ totaldevops:
       - id: id8
         button: Production deployment
         item: If all tests pass, changes are deployed and viewable immediately 
-        link: img/gifs/8.result.gif
-
-  
-
-people:
-  heading: Our experts
-  subheading: Click on name for detailed experiences and skills  
-
+        link: img/gifs/8.result.gif 
+        
 technologies:
   - img: img/logos/1.jpg
   - img: img/logos/2.jpg
@@ -223,8 +217,6 @@ technologies:
   - img: img/logos/10.jpg
   - img: img/logos/11.jpg
   - img: img/logos/12.jpg   
-   
-
 
 contact:
   heading: Contact us
