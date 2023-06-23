@@ -9,7 +9,7 @@
         {%- for link in site.data.default.nav -%}
         {% assign ws = '' %}
         <li class="nav-item" >
-          <a id="nav-item" class="nav-link js-scroll-trigger" href="{{ link.url }}">{{ link.title }}</a>
+          <a id="nav-item" class="nav-link js-scroll-trigger" href="{{ link.url }}" target="_blank">{{ link.title }}</a>
         </li>
         {%- endfor -%}
       {% assign ws = '' %}
